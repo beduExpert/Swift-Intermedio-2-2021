@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerView" customModule="MusicApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yOa-Xd-0pK"/>
+                <outlet property="lblAlbumName" destination="n3k-4Q-7as" id="Ave-OF-yih"/>
+                <outlet property="lblSongName" destination="k9j-Pp-53B" id="et2-qc-bVJ"/>
+                <outlet property="lblSongProgress" destination="R0S-nd-dwk" id="Vsv-jx-Q1U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9r-aQ-0nF">
+                    <rect key="frame" x="20" y="24" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="dkF-Zu-iKa"/>
+                        <constraint firstAttribute="height" constant="100" id="paU-dL-ACr"/>
+                    </constraints>
+                    <state key="normal" title="Play"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="Pgk-Q9-IX4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9j-Pp-53B">
+                    <rect key="frame" x="130" y="24" width="202" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="MWb-wW-lRT"/>
+                        <constraint firstAttribute="height" constant="50" id="P1Y-Li-jzA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3k-4Q-7as">
+                    <rect key="frame" x="131" y="89" width="201" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0S-nd-dwk">
+                    <rect key="frame" x="346" y="24" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="IqP-om-ehj"/>
+                        <constraint firstAttribute="height" constant="50" id="rf2-h7-OjQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n3k-4Q-7as" firstAttribute="leading" secondItem="k9j-Pp-53B" secondAttribute="leading" constant="1" id="22u-b3-woZ"/>
+                <constraint firstItem="L9r-aQ-0nF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="5Ro-k6-iTA"/>
+                <constraint firstItem="n3k-4Q-7as" firstAttribute="trailing" secondItem="k9j-Pp-53B" secondAttribute="trailing" id="BKn-Me-Nw0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="L9r-aQ-0nF" secondAttribute="bottom" constant="20" id="Dju-Tf-dim"/>
+                <constraint firstItem="n3k-4Q-7as" firstAttribute="top" secondItem="k9j-Pp-53B" secondAttribute="bottom" constant="15" id="GIM-TE-Pbq"/>
+                <constraint firstItem="k9j-Pp-53B" firstAttribute="leading" secondItem="L9r-aQ-0nF" secondAttribute="trailing" constant="10" id="SJc-da-OPn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R0S-nd-dwk" secondAttribute="trailing" constant="8" id="XDf-Bw-eY7"/>
+                <constraint firstItem="L9r-aQ-0nF" firstAttribute="top" secondItem="k9j-Pp-53B" secondAttribute="top" id="cBz-EA-JXj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="L9r-aQ-0nF" secondAttribute="top" constant="20" id="cEe-6g-t51"/>
+                <constraint firstItem="R0S-nd-dwk" firstAttribute="top" secondItem="k9j-Pp-53B" secondAttribute="top" id="oBL-x5-PLp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-123" y="52"/>
+        </view>
+    </objects>
+</document>
