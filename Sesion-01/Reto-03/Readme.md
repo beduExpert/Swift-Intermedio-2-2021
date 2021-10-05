@@ -1,71 +1,53 @@
+
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## Reto 
+## App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 
-- Resolver los pequeños problemas implementando funciones de High Order.
+- En este tercer reto incluiremos lo siguiente:
+* Hacer un ejercicio de filtrado utilizando _Higher Order Functions_, dentro de un método en la clase anteriormente creada (_CurrentSong_).
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Playgrounds 
+1. Xcode 12+
 
 #### DESARROLLO
 
-1.- Dado el siguiente **Array** de elementos. Implementar las dos funciones:
+1.- Abrir nuestra App de música.
 
-- map
-- compactMap
+2.- Abrir la _class_ llamada _CurrentSong_.
 
-2.- Con map obtener los valores Enteros.
-Con **compactMap** obtener los valores enteros pero con **unwrap**.
-
-3.- En el Diccionario, obtener los valores únicamente.
-Y crear un solo array.
-
-Las funciones implementarlas a:
-
-```
-let numbers = 
-["1", "2", "tres", "cuatro", "5", "6", "7", "8", "diez"]
-
-
-let dictionary = 
-["Key1": [0, 5, 8], "Key2": [2, 5, 8]]
-```
+3.- Crear un método en la clase que contenga un _array_ de 10 números aleatorios _(se pueden llenar a mano o utilizar la imaginación)_.
+_(Este Método es para practicar y lo quitaremos mas adelante)_.
+* Crear _**Higher Order Functions**_ que hagan lo siguiente:
+* Imprima solamente los números pares.
+* Imprima los números ordenados.
+* Imprima los números pares.
+* Imprima todos los números multiplicados por 2.
+* Jugar libremente con lo aprendido en las HOF.
 
 <details>
-	<summary>Solución</summary>
-	<p> Tenemos el sig. array de elementos, aplicaremos un mapeo para obtener números enteros:</p>
-	
-```
-let numbers = ["1", "2", "tres", "cuatro", "5", "6", "7", "8", "diez"]
+        <summary>Solución</summary>
+        <p> Abrir el proyecto.</p>
+        <p> Abrir el archivo CurrentSong</p>
+        <p> Un ejemplo sencillo de los métodos requeridos sería:</p>
+        ```
 
-let mapped: [Int?] = numbers.map { str in Int(str) }
-print(mapped)
-```
-<p> Con compactMap() limpiaremos las variables Opcionales y solo tendremos los números:</p>
+                class CurrentSong {
+                    ...
 
-```
-let compactMapped: [Int] = numbers.compactMap { str in Int(str) }
-print(compactMapped)
-```
-<p> Del diccionario obtendremos solo los valores con:</p>
-
-```
-let dictionary = ["Key1": [0, 5, 7], "Key2": [2, 5, 9]]
-let dictMap = dictionary.map { $0.value }
-print(dictMap)
-```
-
-<p>Y convertiremos los valores a un array:</p>
-
-```
-let flatMapped = dictionary.flatMap { $0.value }
-print(flatMapped)
-```
-
-</details> 
-
+                        func playWithHOF() {
+                                let array = [23, 44, 2, 123, 444, 554, 346, 778, 324, 567, 887]
+                                //numeros ordenados
+                                print(array.sorted())
+                                //numeros pares
+                                print(array.filter { $0 % 2 == 0 })
+                                //multiplicados por 2
+                                print(array.map { $0 * 2 })
+                                // jugar libremente con las HOF
+                                ...
+                        }
+                }
+        ```
+</details>
