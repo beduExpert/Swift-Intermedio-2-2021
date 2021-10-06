@@ -25,10 +25,9 @@
 <details>
         <summary>Solución</summary>
         <p> Crear un nuevo playground</p>
-        <p> Basarnos en el playground incluido en este reto <b>HOF.playground</b></p>
+        <p> Basarnos en el playground incluido en este reto: HOF.playground</p>
         <p> Un ejemplo sencillo de los métodos requeridos sería:</p>
-        ```
-     
+   
                 let array = [23, 44, 2, 123, 444, 554, 346, 778, 324, 567, 887]
                 //numeros ordenados
                 print(array.sorted())
