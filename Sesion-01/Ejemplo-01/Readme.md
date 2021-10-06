@@ -29,6 +29,6 @@ Realizar:
 	
 	3.- if let
 
-	`4.- Safe unwrap`
+	4.- Safe unwrap
 
 # Favor de revisar el playground: 01 - Optionals.playground
