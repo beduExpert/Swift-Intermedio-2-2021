@@ -25,6 +25,6 @@
 	![Reto 05](Reto-05)
 
 #### Nuestra estructura del proyecto deberá de verse como a continuación:
-!()[estructuraFinal.png]
-!()[apiManager.png]
-!()[song.png]
+![](estructuraFinal.png)
+![](apiManager.png)
+![](song.png)
