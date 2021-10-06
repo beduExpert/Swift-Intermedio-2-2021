@@ -24,8 +24,8 @@
 
 <details>
         <summary>Solución</summary>
-        <p> Abrir el proyecto.</p>
-        <p> Abrir el archivo CurrentSong</p>
+        <p> Crear un nuevo playground</p>
+        <p> Basarnos en el playground incluido en este reto <b>HOF.playground</b></p>
         <p> Un ejemplo sencillo de los métodos requeridos sería:</p>
         ```
      
