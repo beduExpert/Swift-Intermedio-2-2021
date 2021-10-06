@@ -36,5 +36,5 @@
                 //multiplicados por 2
                 print(array.map { $0 * 2 })
                 // jugar libremente con las HOF
-```
+
 </details>
