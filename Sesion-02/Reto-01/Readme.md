@@ -18,4 +18,4 @@
 - Dentro de **Utils**, crear un nuevo _Swift File_ y lo nombraremos _**APIManager**_.
 - A nuestra clase, le definiremos la _Constante estática **shared**_
 
-![Solución](Utils/APIManager.swift)
+[Solución](Utils/APIManager.swift)

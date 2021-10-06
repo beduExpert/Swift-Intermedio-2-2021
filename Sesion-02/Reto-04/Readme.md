@@ -16,4 +16,4 @@
 En nuestro proyecto, en la clase _**Song**_ Hacer que conforme al protocolo **Codable**
 ### Nota: Para conformar al _protocolo codable_ solamente hay que definirlo despues del nombre de la clase, separado por dos puntos (:)
 
-![Solución](Song.swift)
+[Solución](Song.swift)

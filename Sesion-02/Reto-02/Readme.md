@@ -17,4 +17,4 @@
 - Tendremos que definir nuestra url base y un endpoint.
 - Crearemos nuestro método que haga la llamada al endpoint, implementando **URLSession**.
 
-![Solución](Utils/APIManager.swift)
+[Solución](Utils/APIManager.swift)
