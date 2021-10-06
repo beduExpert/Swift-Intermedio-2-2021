@@ -1,20 +1,24 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Nib files, Storyboards y Constraints 
+## Consumo de servicios REST con URLSession.
 
 ### OBJETIVOS 
 
-- Aprender a utilizar Constraints mediante código así como utilizar multiples Storyboards y Xibs.
-- Aprender a utilizar ScrollView y Collection View.
+- Implementar un APIManager.
+- Utilizar URLSession dentro del APIManager.
+- Detectar conectividad a internet.
+- Protocolo Codable.
+- Uso de Coding Keys.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Nib files, Storyboards y Constraints.
+- Implementar un APIManager.
+* En nuestra app del proyecto, crear un nuevo grupo llamado _**Utils**_
+* Dentro de _**Utils**_ crear un nuevo _Swift File_ llamado _**APIManager**_
+* Hacer APIManager tipo _Singleton_
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-02)
 
 - Controles básicos: ScrollView, CollectionView,...
 - CollectionView con vista de detalle.
