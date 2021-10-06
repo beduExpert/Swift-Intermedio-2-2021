@@ -25,11 +25,6 @@ Hacer las implementaciones que se propusieron en el _Work_.
 - Utilizar el [Reto 03](Reto-03).
 - Leer el material que se utilizo en el **_Prework_**
 
-4.- Al seleccionar una celda ir a la vista de reproducción.
-
-NOTA: Cuidar el uso de Optionals.
-Property Observers podrían omitirse de momento, pero si se quieren implementar, utilizarlos en el progressbar y labels de tiempo de progreso la canción.
-
 Estructura final:
 
 ![](estructuraFinal.png)
