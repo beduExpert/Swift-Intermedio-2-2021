@@ -21,8 +21,4 @@ class CurrentSong {
         self.duration = duration
         self.timePlayed = timePlayed
     }
-    
-    func getSongName() -> String {
-        return self.name
-    }
 }
