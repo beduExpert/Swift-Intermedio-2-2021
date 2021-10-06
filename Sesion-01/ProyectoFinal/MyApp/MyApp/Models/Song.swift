@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Songs: Codable {
-    let songId: String?
-    let name: String?
+struct Song {
+    let song_id: String
+    let name: String
     let duration: Double?
     let artist: String?
     let genre: String?
