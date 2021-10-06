@@ -1,8 +1,5 @@
 import UIKit
 
-struct Settings {
+class Settings {
     static let shared = Settings()
-    var username: String?
-    
-    private init() { }
 }

@@ -1,38 +1,21 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## CollectionView with DetailView
+## Detectar conectividad a internet.
 
 ### OBJETIVO 
 
-- Implementar el componente de UICollectionView con vista de detalle, de manera muy generica.
+- Implementar un método que nos detecte si tenemos conectividad a internet, esto para evitar hacer alguna llamada al backend, sin tener conexión y caer en un error.
 
 #### REQUISITOS 
 
-0. Nociones de implementación de UITableView.
-1. Xcode 11
+- El proyecto Anterior
+- Xcode 12+
 
 #### DESARROLLO
 
-Crear un nuevo proyecto.
+En nuestro proyecto, en la clase _**APIManager**_ crear un nuevo método que utilice frameworks del propio sistema operativo para la detección de conectividad hacia internet.
+- El método se llamará _**checkConnectivity**_ y retornará un valor _Bool_ que nos indicará si tenemos conexión.
 
-En el Viewcontroller agregar un elemento de CollectionView.
+![Solución](Utils/APIManager.swift)
 
-![](0.png)
-
-Así como se implementa un TableView, implementar un CollectionView que muestre una celda personalizada.
-
-![](1.png)
-
-Al dar click en la celda, ir a una vista de detalle.
-
-<details>
-	<summary>Solución</summary>
-	<p> Agregar un UICollectionView al ViewController del Storyboard.</p>
-	<p> Agregar un nuevo ViewController y su clase, este será el DetailViewController.</p>
-	<p> Crearemos una Cell customizada para CollectionView. Le agregaremos un Label.</p>
-	<p> En el ViewController principal, implementaremos el código similar a un TableView.</p>
-</details> 
-
-Resultado esperado:
-
-![](0.gif)
+### Los retos 1, 2 y 3 deberán quedar implementados todos juntos en nuestra clase _**APIManager**_

@@ -1,32 +1,30 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Conectando dos Storyboards
+## Completar al final de la sesión, la implementación en nuestro proyecto de:
+* APIManager
+* Detectar conexión a internet
+* Protocolo codable
+* Coding Keys
 
 ### OBJETIVO
 
-- Utilizar las vistas creadas en el Storyboard de Preferencias.
+- Nuestro proyecto al final del módulo deberá quedar con una estructura órdenada y con los requerimientos anteriores implementados.
 
 #### REQUISITOS
 
-1. Proyecto con Storyboard de preferencias con el flujo creado.
-2. Xcode 11.
+1. Proyecto de la sesión.
+2. Xcode 12+.
 
 #### DESARROLLO
 
-1.- En el proyecto debemos tener el **Storyboard** de `Preferences`.
+1.- Hacer todas las implementaciones de los retos.
+	![Reto 01](Reto-01)
+	![Reto 02](Reto-02)
+	![Reto 03](Reto-03)
+	![Reto 04](Reto-04)
+	![Reto 05](Reto-05)
 
-2.- En el **Storyboard** principal `Main`. Cambiaremos el flujo a Navigation.
-
-![](0.png)
-
-3.- Lo mismo con el flujo de `Preferences.storyboard`.
-
-4.- En la vista principal, agregar un botón en la barra de navegación que te lleve al flujo de Preferencias.
-
-Pistas:
-
-```
-let storyboard = AppStoryboard.Preferences.instance
-
-let loginScene = AppStoryboard.Preferences.instance.instantiateViewController(withIdentifier: "PreferenceVC")
-```
+#### Nuestra estructura del proyecto deberá de verse como a continuación:
+!()[estructuraFinal.png]
+!()[apiManager.png]
+!()[song.png]

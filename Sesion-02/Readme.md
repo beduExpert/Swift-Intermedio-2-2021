@@ -20,12 +20,22 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Controles básicos: ScrollView, CollectionView,...
-- CollectionView con vista de detalle.
+- Implementar URLSession dentro del APIManager.
+* Dentro de nuestra clase, crearemos un método llamado _getSongs_ dentro del cual implementaremos URLSession
+
+	- [Reto 02](Reto-02)
+
+- Detectar conectividad a internet.
+* Dentro de nuestro APIManager, crearemos un nuevo método que nos permitirá determinar si hay conexión a Internet.
 
 	- [Reto 03](Reto-03)
 
-- Constraints mediante código. Autolayout.
+- Protocolo Codable.
+* A nuestra clase _**Song**_ la haremos que conforme al protocolo _Codable_.
 
-	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 04](Reto-04)
 
+- Uso de Coding Keys.
+* Implementaremos el uso de _**Coding keys**_ en nuestra clase _**Song**_ para cambiar un parámetro por uno que se adapte mejor a las mejores prácticas.
+
+	- [Reto 05](Reto-05)

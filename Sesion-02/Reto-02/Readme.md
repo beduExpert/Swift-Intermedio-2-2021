@@ -1,47 +1,20 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Creando submodulos con XIBs y nuevos flujos de navegación.
+## Implementar URLSession dentro del APIManager.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Definir una url estática y un endpoint, desde el cual haremos llamadas a un servicio REST.
+- Implementar un método para hacer una llamada tipo _GET_ para obtener un array de canciones.
 
 #### REQUISITOS 
 
-1. El proyecto mas reciente de MusicApp.
-2. Xcode 11
+- El proyecto mas reciente de MusicApp.
+- Xcode 12+
 
 #### DESARROLLO
 
-La meta es ajustar el proyecto para que se parezca al siguiente.
+- Tendremos que definir nuestra url base y un endpoint.
+- Crearemos nuestro método que haga la llamada al endpoint, implementando **URLSession**.
 
-![](0.gif)
-
-Primero, modular.
-
-1.- En el Main Storyboard o si se desea, en un XIB. 
-Crear una vista que tenga:
-
-	- Un TableView
-	- Una cell personalizada
-
-Para mostrar las canciones de un Álbum.
-
-Similar a la imágen:
-
-![](0.png)
-
-Además agregar un botón de Album, este nos enviará a la segunda vista.
-
-3.- Ajusta las vistas, table views e imágenes para que luzca un flujo mostrado.
-
-Solicita a tu instructor los iconos e imágenes.
-
-<details>
-	<summary>Solución</summary>
-	<p>Crear celdas personalizadas para cada tableview.</p>
-	![](1.png)
-	<p>En los dos view controllers donde tenemos UITableView, implementar un DEMO de contenido, es decir, agregar datos simples de cadena de texto solo para mostrar el funcionamiento de las celdas personalizadas. </p>
-	<p>En la vista de reproducción de audio, agregar los botones de Play, next y previous song.</p>
-	<p>En la vista de reproducción de audio, agregar un botón que permita mostrar el album y ademas ir a dicha vista./p>
-</details> 
+![Solución](Utils/APIManager.swift)
