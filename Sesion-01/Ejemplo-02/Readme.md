@@ -1,14 +1,14 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo  de Property Observer
+## Ejemplo de Property Observer
 
 ### OBJETIVO
 
-- Entender el cocepto de Observador.
+- Entender el cocepto de un **_Property Observer_**.
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12+
 2. Playgrounds
 
 #### DESARROLLO
