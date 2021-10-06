@@ -18,4 +18,4 @@ Crear un nuevo playground
 - Definir una clase con el nombre **Settings**
 - Implementar la _Constante estática **shared**_
 
-![](Singleton.playground)
+![Singleton.playground](Singleton.playground)
