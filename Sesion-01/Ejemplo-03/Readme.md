@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Uso de funciones de tipo High Order
+## Uso de funciones de tipo **_Higher Order Function_**
 
 ### OBJETIVO
 
@@ -8,7 +8,7 @@
 
 #### REQUISITOS
 
-1. Xcode
+1. Xcode 12+
 2. Playgrounds
 
 #### DESARROLLO
@@ -32,7 +32,6 @@ retun a > b
 
 
 **PARTE 2:**
-
 
 1.- Crear un nuevo **Playground** y agregar una colección de elementos. 
 
