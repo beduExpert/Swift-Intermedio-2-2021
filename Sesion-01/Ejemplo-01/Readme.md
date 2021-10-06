@@ -31,4 +31,4 @@ Realizar:
 
 	4.- Safe unwrap
 
-# Favor de revisar el playground: 01 - Optionals.playground
+### Favor de revisar el [playground: 01 - Optionals.playground](01 - Optionals.playground)
