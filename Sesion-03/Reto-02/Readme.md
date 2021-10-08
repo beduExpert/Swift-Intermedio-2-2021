@@ -1,62 +1,86 @@
-`Desarrollo Mobile` > `Swift Intermedio 2`
+ `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Modelo de canción en Music App
+## Subclase de UIButton.
 
 ### OBJETIVO 
 
-- Agregar un modelo de canción para poder ser utilizado en el proyecto de Music App.
+- Crear una clase que herede de UIButton.
+- Agregar dicha clase al proyecto de Music App.
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Proyecto de Music App de Postwork de la sesión-02 terminado.
+1. Postwork de la sesión-02, se utilizará el proyecto de MusicApp.
+2. Xcode 11
 
 #### DESARROLLO
 
-1.- Crear un modelo de **Song** más complejo.
+1.- En el proyecto de **Music App**, crear una clase que herede de **UIButton**.
 
-Agregar al modelo:
+2.- Esta clase se encargará de ser aquella en manejar los estados de **Play**, **Pause**, **Next** y **Previous**.
+Cada uno de estos estados de reproducción deberán estar en un **Enum**.
 
-- Año
-- Foto de portada
-- Path o Url, así como en el ejemplo-01.
-- Género
+3.- La subclase deberá tener las sig. características:
 
-2.- Crear un Enum de Géneros musicales.
+- Una variable para almacenar el ícono de acuerdo al tipo de botón. Ya sea icono de `Play`, `Pause`, `Next`,...
 
-3.- Agregar este modelo a una clase de modelos en el proyecto de **Music App.**
+- Un *property* que indique si la canción está en reproducción.
 
-El código de Music App esta en [esta carpeta](src).
+- Cuando la canción esté en Reproducción, cambiar el **icono** a Pausa y viceversa. 
+
+- Crear un Button **redondo**, sin texto y con fondo transparente o de color.
+
+- Los botones previamente creados deben ser reemplazados con esta clase y su funcionamiento debe ser similar.
 
 <details>
 	<summary>Solución</summary>
-	<p> La enumeración de generos musicales seria de la sig. manera. No esta limitada a un número fijo de generos.</p>
-	
+	<p> Crearemos los estados del button como sigue. Nos apoyaremos de un Enum para indicar lose stados de Play, Pause, Next y Previous.</p>
+
 ```
-enum MusicGenre {
-  case Rock
-  case Pop
-  case Jazz
-  case Classical
-  case Electro
-  case Reggea
+enum PlayerStates {
+  case play
+  case pause
+  case next
+  case previous
 }
 ```
 
-<p> El modelo de Song incluirá algunas variables de tipo optional, ya que podria o no tener dicha información. </p>
+<p> Tendremos tres propiedades,dos de iconos y una que indique si esta en reproducción, esta última sirve para el botón de play. </p>
 
 ```
-struct Song {
-  let name: String
-  let album: String
-  var timesPlayed: Int = 0
-  let year: String
-  let imageCover: UIImage?
-  let path: URL?
+  var icon: UIImage?
+  var secondIcon: UIImage?
+  var isPlaying: Bool = false
   
-  mutating func hasBeenPlayed() {
-    timesPlayed += 1
-  }
-}
 ```
+
+<p> Inicializamos el UIButton, creandole un frame con forma redonda y un color de fondo. </p>
+
+```
+  override func draw(_ rect: CGRect) {
+    super.draw(rect)
+    self.layer.cornerRadius = self.frame.width/2
+    self.clipsToBounds = true
+    self.backgroundColor = .clear
+    self.tintColor = greenSelectedCell
+  }
+```
+
+<p>Asignamos los botones de selecion al UIButton.</p>
+
+```
+func performTwoStateSelection() {
+    self.isPlaying = !isPlaying
+    print(isPlaying)
+    self.setImage(isPlaying ? icon : secondIcon, for: .normal)
+    self.setImage(isPlaying ? icon : secondIcon, for: .highlighted)
+  }
+  
+  func setImage(icon: UIImage?) {
+    guard let icon = icon else { return }
+    self.icon = icon
+    self.setImage(icon, for: .normal)
+    self.setImage(icon, for: .highlighted)
+  }
+```
+
 </details> 
