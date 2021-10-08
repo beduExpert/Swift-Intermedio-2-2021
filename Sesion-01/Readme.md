@@ -22,13 +22,13 @@
 	- [Reto 01](Reto-01)
 
 - Property Observers
-* Identificar cuándo se implementan y cómo las puedes utilizar con la finalidad de monitorear cambios en una variable dentro de una clase.
+* Identifica cuándo se implementan y cómo las puedes utilizar con la finalidad de monitorear cambios en una variable dentro de una clase.
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
 - Higher Order Functions.
-* Identificar cómo puedes hacer interacciones en colecciones de datos y aplicar tipos de filtros u operaciones a las mismas, para que obtengas una colección diferente.
+* Identifica cómo puedes hacer interacciones en colecciones de datos y aplicar tipos de filtros u operaciones a las mismas, para que obtengas una colección diferente.
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
