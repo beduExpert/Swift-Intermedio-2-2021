@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo 03 - Uso de funciones de tipo **_Higher Order Function_**
+## Ejemplo 03 - Sesión 01 - Uso de funciones de tipo **_Higher Order Function_**
 
 ### OBJETIVO
 

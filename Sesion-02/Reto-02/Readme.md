@@ -1,11 +1,11 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Implementar URLSession dentro del APIManager.
+## Reto 02 - Sesión 02 - Implementa URLSession dentro de APIManager.
 
 ### OBJETIVO 
 
-- Definir una url estática y un endpoint, desde el cual haremos llamadas a un servicio REST.
-- Implementar un método para hacer una llamada tipo _GET_ para obtener un array de canciones.
+- Define una url estática y un endpoint, desde el cual harás llamadas a un servicio REST.
+- Implementa un método para hacer una llamada tipo _GET_ para que obtengas un array de canciones.
 
 #### REQUISITOS 
 
@@ -14,7 +14,7 @@
 
 #### DESARROLLO
 
-- Tendremos que definir nuestra url base y un endpoint.
-- Crearemos nuestro método que haga la llamada al endpoint, implementando **URLSession**.
+- Tendrás que definir la url base y un endpoint.
+- Crea un método que haga la llamada al endpoint, implementando **URLSession**.
 
 [Solución](Utils/APIManager.swift)

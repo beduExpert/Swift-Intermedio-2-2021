@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Reto 02 - App inicial para proyecto final retomada del módulo anterior.
+## Reto 02 - Sesión 01 - App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 

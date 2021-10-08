@@ -1,10 +1,10 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Patrón de diseño **Singleton**
+## Ejemplo 01 - Sesión 02 - Patrón de diseño **Singleton**
 
 ### OBJETIVO
 
-- Crear una clase y definirla como **Singleton**
+- Crea una clase y definela como **Singleton**
 
 #### REQUISITOS
 
@@ -13,9 +13,9 @@
 
 #### DESARROLLO
 
-Crear un nuevo playground
+Crea un nuevo playground
 
-- Definir una clase con el nombre **Settings**
-- Implementar la _Constante estática **shared**_
+- Define una clase con el nombre **Settings**
+- Implementa la _Constante estática **shared**_
 
 [Solución](Singleton.playground)

@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo 1 - Sesion 1-**Optionals**
+## Ejemplo 01 - Sesion 01 - **Optionals**
 
 ### OBJETIVO
 

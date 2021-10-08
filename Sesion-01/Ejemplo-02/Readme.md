@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo 02 - Property Observer
+## Ejemplo 02 - Sesión 01 - Property Observer
 
 ### OBJETIVO
 

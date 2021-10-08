@@ -1,6 +1,7 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
+## Postwork de la Sesión 02
 
-## Completar al final de la sesión, la implementación en nuestro proyecto de:
+## Al final de la sesión, tendrás implementado completamente los sig. puntos:
 * APIManager
 * Detectar conexión a internet
 * Protocolo codable
@@ -8,16 +9,16 @@
 
 ### OBJETIVO
 
-- Nuestro proyecto al final del módulo deberá quedar con una estructura órdenada y con los requerimientos anteriores implementados.
+- El proyecto al final del módulo deberá quedar con una estructura ordenada y con los requerimientos anteriores implementados.
 
 #### REQUISITOS
 
-1. Proyecto de la sesión.
+1. Proyecto de la sesión en curso.
 2. Xcode 12+.
 
 #### DESARROLLO
 
-- Hacer todas las implementaciones de los retos.
+- Realiza la implementación de todos los retos en tu proyecto.
 
 	* [Reto 01](Reto-01)
 	* [Reto 02](Reto-02)
@@ -25,7 +26,7 @@
 	* [Reto 04](Reto-04)
 	* [Reto 05](Reto-05)
 
-#### Nuestra estructura del proyecto deberá de verse como a continuación:
+#### La estructura final del proyecto deberá de verse como a continuación:
 ![](estructuraFinal.png)
 ![](apiManager.png)
 ![](song.png)

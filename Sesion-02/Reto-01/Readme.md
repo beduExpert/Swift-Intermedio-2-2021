@@ -1,11 +1,11 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Implementar una clase tipo **Singleton** para nuestro **APIManager** 
+## Reto 01 - Sesión 02 - Implementa una clase tipo **Singleton** para el **APIManager** 
 
 ### OBJETIVO 
 
-- Estructurar correctamente el proyecto.
-- Crear nuestra clase tipo singleton.
+- Estructura correctamente el proyecto.
+- Crea una clase tipo singleton.
 
 #### REQUISITOS 
 
@@ -14,8 +14,8 @@
 
 #### DESARROLLO
 
-- En el proyecto de la Sesión-01 crear un nuevo grupo en la raíz del proyecto, llamado _**Utils**_.
-- Dentro de **Utils**, crear un nuevo _Swift File_ y lo nombraremos _**APIManager**_.
-- A nuestra clase, le definiremos la _Constante estática **shared**_
+- En el proyecto de la Sesión-01 crea un nuevo grupo en la raíz del proyecto, llamado _**Utils**_.
+- Dentro de **Utils**, crea un nuevo _Swift File_ y nombralo _**APIManager**_.
+- En la clase, define la _Constante estática **shared**_
 
 [Solución](Utils/APIManager.swift)
