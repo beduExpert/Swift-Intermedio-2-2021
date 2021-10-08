@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Optionals
+## Sesión 01 - Optionals
 
 ### OBJETIVOS 
 
