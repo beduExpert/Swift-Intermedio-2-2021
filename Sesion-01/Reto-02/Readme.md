@@ -1,13 +1,13 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## App inicial para proyecto final retomada del módulo anterior.
+## Reto 02 - App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 
-- En este segundo reto incluiremos lo siguiente:
-* Comenzar a organizar de una mejor manera la estructura de nuestro proyecto.
-* Creación de una clase que contendrá propiedades que pueden ser observadas y posteriormente reflejadas en la UI (_Property Observers_).
+- En este segundo reto incluirás lo siguiente:
+* Comienza a organizar de una mejor manera la estructura del proyecto.
+* Crea una clase que contendrá propiedades que pueden ser observadas y posteriormente reflejadas en la UI (_Property Observers_).
 
 #### REQUISITOS 
 
@@ -15,22 +15,22 @@
 
 #### DESARROLLO
 
-1.- Abrir nuestra App de música.
+1.- Abre la App de música.
 
-2.- Crear una _class_ llamada _CurrentSong_ dentro de un grupo llamado _Views_ en la raíz del proyecto.
+2.- Crea una _class_ llamada _CurrentSong_ dentro de un grupo llamado _Views_ en la raíz del proyecto.
 
 3.- Las propiedades que contendrá la _class_ son las siguientes:
 * **name** de tipo _String_.
 * **duration** de tipo _Double_.
-* **timePlayed** de tipo _Double_ y aquí definir que es una _**Property Observer**_. Crear su método en el _**didSet**_ e imprimir el valor anterior.
+* **timePlayed** de tipo _Double_ y aquí define que es una _**Property Observer**_. Crea su método en el _**didSet**_ e imprime el valor anterior.
 
 <details>
         <summary>Solución</summary>
-        <p> Abrir el proyecto.</p>
-        <p> Crear un Grupo llamado Views</p>
-        <p> Crear un archivo tipo Swift File llamado CurrentSong</p>
-        <p> Agregar las propiedades enlistadas</p>
-        <p> En la variable timePlayed, asignarle la propiedad didSet, quedará de la sig. manera:</p>
+        <p> Abre el proyecto.</p>
+        <p> Crea un Grupo llamado Views</p>
+        <p> Crea un archivo tipo Swift File llamado CurrentSong</p>
+        <p> Agrega las propiedades enlistadas</p>
+        <p> En la variable timePlayed, asignale la propiedad didSet, quedará de la sig. manera:</p>
         ```
                 import Foundation
 

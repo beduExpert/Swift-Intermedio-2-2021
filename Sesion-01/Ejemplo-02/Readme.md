@@ -1,10 +1,10 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo de Property Observer
+## Ejemplo 02 - Property Observer
 
 ### OBJETIVO
 
-- Entender el cocepto de un **_Property Observer_**.
+- Identificar el concepto de un **_Property Observer_**.
 
 #### REQUISITOS
 
@@ -13,9 +13,9 @@
 
 #### DESARROLLO
 
-Abrir un nuevo **Playground** e implementar…
+Abre un nuevo **Playground** e implementa:
 
-1.- Una **Estructura** y un **Enum** donde se manejen los estados de Mario Bros, pequeño y grande.
+1.- Una **struct** y un **Enum** en donde manejes los estados de Mario Bros, pequeño y grande.
 
 2.- La estructura debe manejar un **Property Observer** que en caso de que Mushroom sea `True`, Mario crezca.
 
@@ -31,14 +31,14 @@ var unlocked: Bool = true {
 }
 ```
 
-Probaremos actualizando el valor:
+Prueba actualizando el valor:
 
 ```
 // Updating value
 unlocked = false
 ```
 
-Para manejar los tamaños de Mario, se debe basar en un **Enum**:
+Para manejar los tamaños de Mario, te debes basar en un **Enum**:
 
 ```
 // Mario example
@@ -47,7 +47,7 @@ enum Mario {
 }
 ```
 
-3.- Implementar el código que permita crecer a Mario en caso de que haya un hongo.
+3.- Implementa el código que permita crecer a Mario en caso de que haya un hongo.
 
 ```
 struct MarioWorld {
@@ -69,7 +69,7 @@ struct MarioWorld {
 **Mario** se volverá grande si **Mushroom** es `True`:
 
 ```
-var game = MarioWorld(mario: .small, mushroom: false)
+var game = MarioWorld(mario: .small, mushroom: false)∫
 game.mushroom = false
 ```
 

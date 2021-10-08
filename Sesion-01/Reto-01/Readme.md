@@ -1,13 +1,13 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## App inicial para proyecto final retomada del módulo anterior.
+## Reto 01 - App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 
-- En este primer reto incluiremos lo siguiente:
-* Comenzar a organizar de una mejor manera la estructura de nuestro proyecto.
-* Creación de una estructura capaz de recibir datos nulos (uso de _optionals_).
+- En este primer reto incluirás lo siguiente:
+* Comienza a organizar de una mejor manera la estructura del proyecto.
+* Crea una estructura capaz de recibir datos nulos (uso de _optionals_).
 
 #### REQUISITOS 
 
@@ -15,9 +15,9 @@
 
 #### DESARROLLO
 
-1.- Abrir nuestra App de música.
+1.- Abre tu App de música.
 
-2.- Crear una _struct_ llamada _Song_ dentro de un grupo llamado _Models_ en la raíz del proyecto.
+2.- Crea una _struct_ llamada _Song_ dentro de un grupo llamado _Models_ en la raíz del proyecto.
 
 3.- Las propiedades que contendrá la _struct_ son las siguientes:
 * **song_id** de tipo _String_.
@@ -31,5 +31,5 @@
         <p> Abrir el proyecto.</p>
         <p> Crear un Grupo llamado Models</p>
         <p> Crear un archivo tipo <i>Swift File</i> llamado Song</p>
-        <p> Agregar las propiedades enlistadas, las marcadas como optional, deberán terminar con ?</p>
+        <p> Agregar las propiedades enlistadas, las marcadas cómo optional, deberán terminar con ?</p>
 </details>

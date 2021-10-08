@@ -1,11 +1,11 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Sesion 1 - **Optionals**
+## Ejemplo 1 - Sesion 1-**Optionals**
 
 ### OBJETIVO
 
-- Aprender como es el uso de **Optionals**
+- Aprender cómo es el uso de las variables tipo **Optionals**
 
 
 #### REQUISITOS
@@ -15,7 +15,7 @@
 
 #### DESARROLLO
 
-Veremos como hacer las siguientes acciones:
+Veremos cómo hacer las siguientes acciones:
 * _Force unwrap_
 * _Check if nil_
 * _if let_
@@ -31,4 +31,4 @@ Realizar:
 
 	4.- Safe unwrap
 
-### Favor de revisar el playground: 01 - Optionals.playground que se encuentra en esta sección.
+### Revisa el playground: 01 - Optionals.playground que se encuentra en esta sección.

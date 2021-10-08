@@ -4,9 +4,13 @@
 
 ### OBJETIVOS 
 
-- Aprender que es una variable tipo **_Optional_**, entender que es el **Force unwrap**, Conocer si nuestra variable **NO** es _nil_, Saber implementar el **_if let_** y Saber hacer un **_Safe unwrapping_**, todo esto para evitar que nuestra app caiga en un error de excepción cuando reciba una variable que contenga un nulo y sepa como proceder.
+* Identificar qué es una variable tipo **_Optional_**.
+* Analizar qué es el **Force unwrap**.
+* Verificar si nuestras variables **NO** son _nil_.
+* Implementar el **_if let_**
+* Demostrar la elaboración de **_Safe unwrapping_**.
 
-#### ORGANIZACION DE LA CLASE 
+#### ORGANIZACIÓN DE LA CLASE 
 
 - Optionals
 * Force Unwrap
@@ -18,17 +22,17 @@
 	- [Reto 01](Reto-01)
 
 - Property Observers
-* Saber cuando se implementan y como se pueden utilizar con la finalidad de monitorear cambios en una variable dentro de una clase.
+* Identificar cuándo se implementan y cómo las puedes utilizar con la finalidad de monitorear cambios en una variable dentro de una clase.
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
 - Higher Order Functions.
-* Saber como hacer interacciones en colecciones de datos y poder aplicar tipos de filtros u operaciones a las mismas, para obtener una colección diferente.
+* Identificar cómo puedes hacer interacciones en colecciones de datos y aplicar tipos de filtros u operaciones a las mismas, para que obtengas una colección diferente.
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-### Postwork 
+### PostWork 
 
 [Postwork](Postwork)

@@ -1,9 +1,13 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
+## PostWord de la Sesión 1
+
 ### OBJETIVO
 
-- Comenzar a implementar nueva funcionalidad y mejorar la estructura de nuestra app de música, al llegar a la sesión 8, tendremos un proyecto final.
+- Comienza a implementar nueva funcionalidad.
+- Mejora la estructura de la app de música
+- Al llegar a la sesión 8, tendras el proyecto final.
 
 #### REQUISITOS
 
@@ -11,19 +15,19 @@
 
 #### DESARROLLO
 
-Hacer las implementaciones que se propusieron en el _Work_.  
+Realiza las implementaciones que se propusieron en el _Work_.  
 
 **Requisitos:**
 
-1.- Crear una _class_ nueva, llamada _Song_ que incluya algunos **_Optionals_**.
-- Utilizar el [Reto 01](Reto-01).
+1.- Crea una _class_ nueva, llamada _Song_ que incluya algunos **_Optionals_**.
+- Utiliza el [Reto 01](Reto-01).
 
-2.- Crear un **_Property Observer_** que por ahora imprima el _oldValue_ implementando el metodo _didSet_.
-- Utilizar el [Reto 02](Reto-02).
+2.- Crea un **_Property Observer_** que por ahora imprima el _oldValue_ implementando el método _didSet_.
+- Utiliza el [Reto 02](Reto-02).
 
-3.- Jugar con **_Higher Order Functions_**.
-- Utilizar el [Reto 03](Reto-03).
-- Leer el material que se utilizo en el **_Prework_**
+3.- Juega con **_Higher Order Functions_**.
+- Utiliza el [Reto 03](Reto-03).
+- Lee el material que se utilizó en el **_Prework_**
 
 Estructura final:
 
