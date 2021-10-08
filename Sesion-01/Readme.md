@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Sesión 01 - Optionals
+## Sesión 01 - Optionals, Property Observers y Higher Order Functions.
 
 ### OBJETIVOS 
 
