@@ -4,19 +4,19 @@
 
 ### OBJETIVO
 
-- Una vez vista la teoria de los closures, implementar la sintaxis mediante un ejemplo.
+- Implementar una vista mediante un archivo .xib.
 
 #### REQUISITOS
 
-1. Xcode 11.
-2. Playgrounds.
+1. Xcode 12+.
 
 #### DESARROLLO
 
-1.- Comenzamos declarando una función. Esta función debe tener parametros y un valor de retorno.
+1.- Descarga el archivo [MusicApp-NoStoryboard.zip](MusicApp-NoStoryboard.zip), aquí se hará la implementación.
 
-2.- Declarar una variable de tipo closure. Este closure tendra dos parametros y un tipo de retorno.
-
-3.- Luego implementar el mismo closure, pero sin return y tambien utilizando short hand para no especificar nombres de variables.
-
+2.- Crea un nuevo **ViewController** llamado **_LoginViewController_**.
+* Crea 2 **IBOutlets** y un **IBAction** para conectar los **TextFields** y el **Botón**
+ 
+3.- Cambia el _File owner_ en la vista **LoginView.xib**.
+* Asignalé **_LoginViewController_**.
 ![](0.png)

@@ -1,30 +1,45 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Primeros pasos en Completions
+## Ejemplo 02 - Sesión 04 - Constraints, Autolayout y Constraints mediante código.
 
 ### OBJETIVO
 
-- Implementar un completion básico
+- Implementar _Constraints_ mediante **Interface Builder**.
+- Implementar componentes con código y aplicarles _Constraints_.
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12+.
+2. El proyecto de ejemplo de esta sesión.
 
 #### DESARROLLO
 
-Con base al completion mostrado, realizar lo siguiente.
+1.- Abre el proyecto de ejemplo de esta sesión.
 
-En el ejemplo 02, crear una variable para almacenar un closure y pasarlo como parámetro a la función. Ya teniendo esto, invocar a dicha función.
+2.- Abre el **LoginView.xib**.
 
-```
-func calculate(_ a: Int, _ b: Int, operation: (Int, Int) -> Int) -> Int {
-  let result = operation(a, b)
-  print(result)
-  return result
-}
+3.- En _Interface Builder_ selecciona el **UILabel** de **Welcome**
 
-let add = { (a, b)  -> Int in
-  return a + b
-}
-calculate(3, 4, operation: add)
-```
+4.- En los controles avanzados, abre **Add New Constraints**
+
+5.- Asignale los _Constraints_:
+- Izquierdo (Leading)
+- Derecho (Trailing)
+- Arriba (Top)
+- Alto (Height)
+![](1.png)
+
+6.- Abre la clase **LoginViewController.swift**
+
+7.- En el método **viewDidLoad()** crea escribe el sig. código:
+````
+let image = UIImageView(image: UIImage(named: "logoBedu"))
+image.translatesAutoresizingMaskIntoConstraints = false
+self.view.addSubview(image)
+image.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10.0).isActive = true
+image.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10.0).isActive = true
+image.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10.0).isActive = true
+image.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+````
+Con esto, estas agregando una imagen con el Logo de **_Bedu_** alineada al borde inferior y con un alto de 100.0
+![](2.png)
