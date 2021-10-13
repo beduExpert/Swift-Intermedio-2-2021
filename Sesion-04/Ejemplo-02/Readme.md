@@ -43,4 +43,5 @@ image.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10.0).is
 image.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
 ````
 Con esto, estas agregando una imagen con el Logo de **_Bedu_** alineada al borde inferior y con un alto de 100.0
+
 ![](2.png)

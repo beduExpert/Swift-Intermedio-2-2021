@@ -27,5 +27,5 @@
         <summary>Solución</summary>
         <p> let scrollVC = ScrollViewController(nibName: "ScrollViewController", bundle: nil)</p>
         <p> let loginVC = LoginViewController(nibName: "LoginView", bundle: nil)</p>
-        <p> ... .rootViewController = loginVC
+        <p> ... .rootViewController = loginVC</p>
 </details>
