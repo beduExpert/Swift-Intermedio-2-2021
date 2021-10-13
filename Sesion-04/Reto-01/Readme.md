@@ -4,7 +4,7 @@
 
 ### OBJETIVO 
 
-- Implementar conexiones y cambiar el **rootViewController** en el **ScreneDelegate**
+- Implementar conexiones y cambiar el **rootViewController** en el **SceneDelegate**
 
 #### REQUISITOS 
 
