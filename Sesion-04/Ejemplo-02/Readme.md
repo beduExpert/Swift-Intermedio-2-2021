@@ -27,7 +27,8 @@
 - Derecho (Trailing)
 - Arriba (Top)
 - Alto (Height)
-![](1.png)
+
+- ![](1.png)
 
 6.- Abre la clase **LoginViewController.swift**
 
