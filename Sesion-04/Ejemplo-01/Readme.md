@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Closures
+## Ejemplo 01 - Sesión 04 - Archivos .xib (nib files).
 
 ### OBJETIVO
 

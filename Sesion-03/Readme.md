@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Manejo de estructuras, clases y enumeraciones. Programación orientada a objetos (OOP) y Polimorfismo.
+## Sesión 03 - Manejo de estructuras, clases y enumeraciones. Programación orientada a objetos (OOP) y Polimorfismo.
 
 ### OBJETIVOS 
 

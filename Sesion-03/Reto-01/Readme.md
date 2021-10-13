@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Modelo de canción en Music App
+## Reto 01 - Sesión 03 - Modelo de canción en Music App
 
 ### OBJETIVO 
 

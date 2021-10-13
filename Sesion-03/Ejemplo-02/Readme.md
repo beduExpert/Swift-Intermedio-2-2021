@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Structs
+## Ejemplo 02 - Sesión 03 - Structs
 
 ### OBJETIVO
 

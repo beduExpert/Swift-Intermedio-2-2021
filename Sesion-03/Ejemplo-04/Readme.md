@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Polimorfismo y el operador "as" o _DownCast_
+## Ejemplo 04 - Sesión 03 - Polimorfismo y el operador "as" o _DownCast_
 
 ### OBJETIVO
 

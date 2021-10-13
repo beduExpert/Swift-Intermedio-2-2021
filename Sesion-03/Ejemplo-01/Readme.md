@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Clases
+## Ejemplo 01 - Sesión 03 - Clases
 
 ### OBJETIVO
 

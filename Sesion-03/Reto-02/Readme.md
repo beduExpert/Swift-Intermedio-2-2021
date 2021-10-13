@@ -1,6 +1,6 @@
  `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Subclase de UIButton.
+## Reto 02 - Sesión 03 - Subclase de UIButton.
 
 ### OBJETIVO 
 

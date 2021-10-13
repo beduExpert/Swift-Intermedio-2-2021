@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Enums
+## Ejemplo 03 - Sesión 03 - Enums
 
 ### OBJETIVO
 
