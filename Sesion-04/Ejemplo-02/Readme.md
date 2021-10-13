@@ -31,7 +31,7 @@
 
 6.- Abre la clase **LoginViewController.swift**
 
-7.- En el método **viewDidLoad()** crea escribe el sig. código:
+7.- En el método **viewDidLoad()** escribe el sig. código:
 ````
 let image = UIImageView(image: UIImage(named: "logoBedu"))
 image.translatesAutoresizingMaskIntoConstraints = false
