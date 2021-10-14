@@ -1,23 +1,22 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Mejorar el Extension de UIButton
+## Sesión 04 - Postwork - Implementar .xib views, constraints, scrollViews y collectionViews
 
 ### OBJETIVO
 
-- Unificar código de clases con extensions para hacer una implementación mas generica.
+- Aplicar correctamente el uso e implementación de todos los temas que se vieron en la lección.
 
 #### REQUISITOS
 
 1. Xcode 11
-2. Proyecto del Reto-03
 
 #### DESARROLLO
 
-Se tiene el proyecto de MusicApp con una clase llamada  `PlayerButton`.
+Durante los retos se implementaron diferentes componentes a dos proyectos.
 
-Esta clase se encarga de personalizar el botón de play, next y previous.
+- El proyecto de `MusicaApp` deberá de prescindir del **Storyboard**
+- El proyecto de `CollectionView` deberá de presentar un listado de imágenes, entrar al detalle y presentar nombre e imagén de la ciudad seleccionada.
 
-Por otra parte tenemos el Highlight que cambia de color si es presionado el botón, pero esta en un Extension directamente en el UIButton.
-
-Este postwork consiste hacer que el extension de UIButton tenga toda la implementación necesaria para no depender del uso de la clase PlayerButton, a tal grado de poder eliminar dicha clase.
+### NOTA
+* Si no se alcanzá a hacer la implementación del **CollectionView** en la sesión del _work_ favor de tomar tiempo de esta sesión de _postwork_ para terminar.

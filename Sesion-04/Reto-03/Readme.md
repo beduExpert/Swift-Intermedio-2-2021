@@ -11,7 +11,7 @@
 1. Xcode 12+.
 2. App de ejemplo de esta sesión.
 3. Ejemplo sugerido al final del [Ejemplo-03](Ejemplo-03) de esta sesión.
-* [Ejemplo ScrollView](https://drive.google.com/file/d/1AFlQDWqMas_w9s0GFbe-AV38WgA8VRgT/view?usp=sharing)
+* [Ejemplo ScrollView](ScrollView.zip)
 
 #### DESARROLLO
 
