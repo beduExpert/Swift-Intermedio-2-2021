@@ -1,39 +1,33 @@
-
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Protocol Creation
+## Ejemplo 01 - Sesión 05 - Closures.
 
 ### OBJETIVO
 
-- Crear definiciones y protocolos para definir características. Luego conformar dichos protocolos por una estructura como un Struct o Clase.
+- Implementar **Closures** en métodos para realizar acciones obteniendo un tipo de dato de regreso.
 
 #### REQUISITOS
 
-1. Xcode 11
-2. Playgrounds
+1. Xcode 12+
+2. Proyecto de música del curso.
 
 #### DESARROLLO
 
-1.- Realizar protocolos e implementarlos con Structs.
-
-Nos basaremos en las definiciones previamente creadas:
+1.- Revisión del **Closure** tipo _@scaping_ del **APIManager** de tu proyecto de música:
+* Abre el proyecto de _MusicaApp_.
+* Abre el APIManager.
+* Ahora entiendes el bloque de código que regresa un listado de caciones, en el método **getMusic**.
 
 ![](0.png)
 
-2.- Crearemos **dos** definiciones de bebidas más, esta vez para Bebidas calientes.
-
-	- Cafe
-	- Chocolate
-
-Además de crear protocolos para definir sabor amargo y temperatura.
-
-![](1.png)
-
-
-Al conformar los protocolos no importa que haya ciertas similitudes.
-
-![](2.png)
-
-
-
-
+* El metodo recibe un **Closure** como parámetro y regresa un par de valores, que puede ser un arreglo de un modelo o un error, los dos son opcionales.
+````
+if(error != nil){
+    completion(nil, error!) // como el tipo de valor que regresa el closure es opcional, por eso aqui se regresa primero nil y luego el error.
+} else{
+    if let data = data {
+        let result = try? JSONDecoder().decode([Song].self, from: data)
+        completion(result, nil) // al igual que aquí, se regresa el resultado (que es el arreglo de modelos) y luego nil.
+    }
+}
+````
