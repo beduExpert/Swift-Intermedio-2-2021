@@ -21,7 +21,6 @@
 <details>
 	<summary>Solución</summary>
 	<p> Se escribe esta constante dentro del playground </p>
-</details>
 
 ```
 let integerMultiplier = {
@@ -31,6 +30,7 @@ let integerMultiplier = {
 let number = integerMultiplier(10)
 print(number) // imprime 20
 ```
+</details>
 
 ## Parte 2
 
