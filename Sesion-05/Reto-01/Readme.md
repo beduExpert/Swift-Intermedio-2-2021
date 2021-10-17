@@ -57,10 +57,10 @@ let value = addScore(11)
   <p> 2. Después dentro de la función se define el closure de calculate. Este simplemente agrega score y points y regresa el resultado. La función llama al closure con calculate()</p>
   <p> 3. Finalmente, la función addScore(_:) es llamada, asignándole un valor e imprimiendolo </p>
   <p> El closure calculate, captura ambos, score y points, Ninguna de esas variables están declaradas localmente dentro del closure, aunque el closure puede tomar los valores, eso es debido a la característica de capturing de un closure</p>
-</details>
 
 * Entendiendo la característica _capturing_
 ![](0.png)
+</details>
 
 #### Nota para el mentor:
 Favor de revisar el siguiente contenido:
