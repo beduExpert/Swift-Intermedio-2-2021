@@ -1,49 +1,60 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Protocols, Mutating y Structs
+## Reto 02 - Sesión 05 -	Extensions
 
 ### OBJETIVO 
 
--  Migrar la funcionalidad del `Enum` a un `Struct` que conforme el protocolo `Playable`.
+-  Reforzar el uso de **Extensions** para tipos nativos.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. XCode 12+.
+2. Playgrounds.
 
 #### DESARROLLO
 
-Migrar la funcionalidad del Enum a un Struct que conforme el
-protocolo Playable.
+## Parte 1
 
-![](0.png)
-
-Crear un `Struct` que replique la misma funcionalidad que el Enum.
-
-Debe conformar el protocolo `Playable`.
+1. Crea un Playground nuevo.
+2. Crea una **Extensión** básada en un **UIButton**.
+3. Harás un método mediante el cual cuando se implemente, los botones tengan:
+* Un borde redondeado de 8.0.
+* El borde de color azul.
+* El borde de 1.0 de grosor.
 
 <details>
 	<summary>Solución</summary>
-	<p> Al crear una estructura, conformaremos el Protocolo Playable.</p>
-	```
-	struct Song: Playable {
-	}
-	```
-	<p> Replicamos la logica, algo similar, basicamente es poder cambiar un valor de un property existente en la estructura. </p>
+	<p> Extensión de UIButton </p>
 
 ```
-struct Song: Playable {
-  var isPlaying: Bool
-  mutating func play() {
-    self.isPlaying = !isPlaying
-  }
+extension UIButton {
+    func bordered() {
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.blue.cgColor
+        self.layer.cornerRadius = 8.0
+    }
 }
 ```
+</details>
 
-<p> Al crear una instancia probamos que efectivamente se cambie el valor. </p>
+
+## Parte 2
+
+1. Implementa tu nueva propiedad al _Botón_ **Login** de la vista de **LoginViewController**
+
+<details>
+	<summary>Solución</summary>
+	<p> 1. Crear el IBOutlet en la clase LoginViewController.swift </p>
+	<p> * @IBOutlet private weak var btnLogin: UIButton! </p>
+	<p> 2. Hacer la conexión en LoginView.xib </p>
+	<p> 3. En la clase LoginViewController, en el método <i>viewDidLoad</i> implementar la nueva propiedad </p>
 
 ```
-var s = Song(isPlaying: true)
-s.play()
-s.isPlaying
+viewDidLoad() {
+	...
+	btnLogin.bordered()
+}
 ```
-</details> 
+ <p> el resultado debe de ser el siguiente: </p>
+ ![](0.png)
+</details>
