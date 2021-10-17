@@ -20,7 +20,6 @@
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
-	- [Reto 03](Reto-03)
 
 #### Postwork
 
