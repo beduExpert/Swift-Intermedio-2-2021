@@ -23,5 +23,3 @@
 	<summary>Solución</summary>
 	<p> Dejar que el Alumno juegue libremente e implemente los estilos a cada componente a su gusto. </p>
 </details>
-
-### ¡Nos vemos en la Sesión 6!
