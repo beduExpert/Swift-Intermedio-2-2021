@@ -56,5 +56,7 @@ viewDidLoad() {
 }
 ```
  <p> el resultado debe de ser el siguiente: </p>
- ![](0.png)
+
+![](0.png)
+
 </details>
