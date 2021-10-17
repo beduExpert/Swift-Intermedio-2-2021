@@ -16,6 +16,7 @@
 * Crear extensiones para:
 - UITextField.
 - UIImage.
+- UILabel.
 
 * Aplicar estilos distintos, y personalizar la vista de login, de acuerdo a tus gustos.
 
