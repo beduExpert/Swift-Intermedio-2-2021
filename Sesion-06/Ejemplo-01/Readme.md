@@ -1,34 +1,44 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Hola mundo Queues
+## Ejemplo 01 - Sesión 06 - Herencia.
 
 ### OBJETIVO
 
-- Comprender la importancia del `Quality of Service` en queues.
+- Poder implementar subclases, utilizando correctamente la _**Herencia**_.
 
 
 #### REQUISITOS
 
-1. Playgrounds
-2. Xcode 11
+1. Playgrounds.
+2. Xcode 12+.
 
 #### DESARROLLO
 
-Se realizará un experimiento donde se pueden comparar dos procesos simultaneos.
+Vas a crear una clase y a partir de ahí crearas subclases:
 
-Crear un `queue` con un `QoS` definido.
+## Parte 1
 
-1.- Probar con todos los `QoS` previamente vistos en las diapositivas.
+1. Crea un nuevo _Playground_.¡
+2. Crea una clase llamada **Animal**.
+3. Define las siguientes propiedades:
+* _name_ igualandola a **""** (string vacío).
+* _talk_ igualandola a **false**.
+* _isHuman_ de tipo **Bool** igualala a **false**.
 
-![](0.png)
+## Parte 2
 
-![](1.png)
+1. Crea una subclase llamada **Duck** que herede de **Animal**.
+2. Juega con las propiedades de la clase padre.
+3. Imprime en consola las propiedades que has modificado.
 
-2.- Ver el *Output* en la consola y comparar resultados.
+## Parte 3
 
-3.- Comenzamos creando un `queue` con un `QoS` en *userInteractive*. 
+1. Crea una subclase llamada **Dog** que herede de **Animal**.
+2. Juega con las propiedades de la clase padre.
+3. Imprime en consola las propiedades que has modificado.
 
-4.- Ir variando su valor hasta llegar a *backgound* para ir viendo cómo se ejecuta el código.
+## Parte 4
 
-5.- El queue se ejecutará tanto como **síncrono** como **asíncrono**.
+1. Crea una subclase llamada **Human** que herede de **Animal**.
+2. Juega con las propiedades de la clase padre.
+3. Imprime en consola las propiedades que has modificado.

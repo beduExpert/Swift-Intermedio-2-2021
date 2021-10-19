@@ -1,86 +1,40 @@
  `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## Dependencia de Operations 
+## Reto 02 - Sesión 06 - Polimorfismo.
 
 ### OBJETIVO 
 
-- Crear dos subclases de Operation y hacer una dependencia.
+- Crear una clase base, implementar subclases y hacer **override** de los métodos que se implementen.
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Playgournds
+1. Xcode 12+.
+2. Playgournds.
 
 #### DESARROLLO
 
-1.- Creamos dos subclases de `Operation`.
+1. Crea una clase base llamada **Warrior**.
+2. Define las sig. propiedades:
+* _name_ de tipo **String**.
+* _health_ de tipo **Double**.
+* _maxHealth_ de tipo **Double**.
+* _damage_ de tipo **Int**.
+* _defense_ de tipo **Int**.
+* _message_ de tipo **String**.
 
-2.- Reescribimos el `main()` con override y agregamos el código deseado, puede ser un print().
+3. Implementa el método **init**.
+4. Crea un **convenience init()** que sette estos valores por default:
+* self.init(name: "Default warrior", health: 100.0, damage: 20, defense: 10)
 
-3.- Cramos una instancia de cada clase creada.
+5. Crea una instancia llamada **gandalf** que herede de **Warrior**.
+6. Inicializala con los sig. valores:
+* (name: "Gandalf", health: 60.0, maxHealth: 100.0, damage: 15, defense: 12, message: "Magician")
 
-4.- Creamos un completion block de cada operation, este se ejecutará al finalizar la ejecución del operation en cuestión.
+7. Crea una instancia llamada **zalgoren** que herede de **Warrior**.
+8. Inicializala con los sig. valores:
+* (name: "Zalgoren", health: 80.0, maxHealth: 100.0, damage: 15, defense: 12, message: "Warrior")
+9. Modifica las propiedades a tu gusto e imprime los valores en consola.
 
-5.- Creamos la dependencia.
-
-6.- Agregamos los Operations a un `Queue` y ejecutamos.
-
-<details>
-	<summary>Solución</summary>
-	<p> Creamos dos subclases de Operation </p>
-	
-```
-import UIKit
-
-class Operation1: Operation {
-    override func main() {
-        print("operation 1")
-    }
-}
-
-class Operation2: Operation {
-    override func main() {
-        print("operation 2")
-    }
-}
-
-```
-
-<p> Creamos dos instancias de Operation </p>
-
-```
-let op1 = Operation1()
-let op2 = Operation2()
-```
-
-<p>A cada operation le agregamos un completion Block. </p>
-
-```
-op1.completionBlock = {
-    print("ooperation 1 terminado")
-}
-
-op2.completionBlock = {
-    print("operation 2 terminado")
-}
-```
-
-<p> Agregamos su dependencia: </p>
-
-```
-// Agregamos la dependencia
-op2.addDependency(op1)
-```
-
-<p> Las asignamos a un Queue </p>
-
-```
-let opsQue = OperationQueue()
-//opsQue.maxConcurrentOperationCount = 1
-opsQue.addOperation(op1)
-opsQue.waitUntilAllOperationsAreFinished()
-opsQue.addOperation(op2)
-```
-
-</details> 
+# Nota para el mentor:
+* Si desean ver más a detalle el ejemplo de _Warriors_ favor de revisar este contenido:
+https://www.ictdemy.com/swift/oop/arena-with-a-mage-in-swift-inheritance-and-polymorphism

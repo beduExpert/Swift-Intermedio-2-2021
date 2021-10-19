@@ -1,36 +1,23 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## GCD Grand Central Dispatch
+## Sesión 06 - Programación orientada a objetos. Herencia y Polimorfismo.
 
 ### OBJETIVOS 
 
-- Entender los conceptos de procesos paralelos, sincronos y asincronos.
-
-- Implementar procesos en el background mediante el uso de GCD.
-
+- Entender el paradigma de **Herencia** en la programación orientada a objetos.
+- Entender el paradigma de **Polimorfismo** en la programación orientada a objetos.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Introducción al GCD
-- GCD Grand Central Dispatch
-- Tareas Asíncronas y Sincrona
-- DispatchQueues y Threads
-- Main Thread
+- Herencia
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Operations
+- Polimorfismo
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
-
-- Multiples implementaciones de Concurrencia
-
-	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
-
 	
 #### Postwork
 
