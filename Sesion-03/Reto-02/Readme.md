@@ -10,7 +10,7 @@
 #### REQUISITOS 
 
 1. Postwork de la sesión-02, se utilizará el proyecto de MusicApp.
-2. Xcode 11
+2. Xcode 12+.
 
 #### DESARROLLO
 
