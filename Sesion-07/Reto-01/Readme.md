@@ -1,53 +1,35 @@
- 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## GET request con objetos mutables
+## Reto 01 - Sesión 07 - Protocolos y extensiones.
 
-### OBJETIVO 
+### OBJETIVO
 
-- A utilizar los parametros de JSON Seralization para la creación de peticiones con respuesta que permita editar sus datos.
+- Implementar nuevos protocolos.
 
-- Implementar un Get request mediante URLSessionTask.
+#### REQUISITOS
 
-#### REQUISITOS 
-
-1. Xcode 11
-2. Playgrounds
+1. Playgrounds.
+2. Xcode 12+.
+3. El Playground de ejemplo que utilizaste en el ejemplo 01 de esta sesión.
 
 #### DESARROLLO
 
-Realizar un GET request con objetos mutables.
+Aplica lo que has aprendido en el prework.
 
-Se consumirá un JSON como se muestra.
+## Parte 1
 
-Una vez terminado el Request, deberá poder actualizar los datos del dictionary.
+1. Crea un nuevo protocolo llamado **Fly** e implementa un método llamado **canFly()**.
 
-El Request deberá obtener un objeto JSON y pasarlo a un dictionary.
-Modificar los datos del dictionary obtenido.
+2. Crea una estructura llamada **Bird** que implemente **Animal** y **Fly**.
 
-Proporcionar la URL lista para el ejercicio o bien, guiar al alumno para que cree el JSON desde su cuenta de Github como un Gits.
+3. Implementa el método _canFly()_ del _protocolo_ e imprime **El pájaro puede volar**
 
-URL del JSON:
-> https://gist.githubusercontent.com/richimf/0d18f9ba3e028fca677b39949fd92185/raw/c9b355b816864d3aa79bcacb93493a6608d841b8/file.json
+4. Crea una nueva instancia de **Bird** e invoca el método _canFly()_. Observa la consola.
 
+## Parte 2
 
-<details>
-	<summary>Solución</summary>
-	<p> Crearemos un Session como usualmente se ha venido haciendo.</p>
-	
-```
-let config = URLSessionConfiguration.default
-let session = URLSession(configuration: config)
-```
+No todos los pájaros pueden volar...
 
-<p>Crear un session.dataTask() pasandole la URL del JSON a consumir.</p>
+1. Crea una estructura llamada **Penguin** que implemente **Animal** y **Fly**.
 
-```
-let task = session.dataTask(with: url)
-```
-
-<p> El JSONSerialization debe contener como options el valor de **.mutableContainers** </p>
-<p> El objeto recibido deberia poder mutar sus valores.</p>
-
-
-</details> 
+2. Crea una nueva instancia de **Penguin** e invoca los métodos que has definido.

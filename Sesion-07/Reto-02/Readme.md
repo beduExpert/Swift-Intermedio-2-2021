@@ -1,62 +1,30 @@
  `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## Descargar una Imagen mediante GET
+## Reto 02 - Sesión 07 - Protocolos y delegados y como llamar a los métodos desde el delegado.
 
 ### OBJETIVO 
 
-- Crear un GET para obtener una imagen y mostrarla en el LIVE del Playground.
+- Implementar un método en el protocolo que agregue una **Person** sin recibir parámetros.
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Conectividad a Internet
-3. Playgrounds
+1. Xcode 12+
+2. El proyecto del Postwork que revisaste en el **Ejemplo 02**
 
 #### DESARROLLO
 
-Código que implementa un **GET** request de una imágen y además utiliza Dispatch Queues para poder mostrarla correctamente.
+1. En la clase **AddPersonViewController** define un nuevo método que no reciba parametros, llamalo **addAnonymus**
 
-Crearemos un **GET** request para descargar una imágen.
+2. Define una nueva **@IBAction** llamada **addAnonymus** la cual vas a conectar a un botón.
 
-En un nuevo Playground.
+3. En el **StoryBoard** crea un nuevo **UIButton** ponle **Add Anonymus** como título y haz la conexión con el **IBAction**
 
-Implementar un código que permita obtener una imagen de internet y mostrarla.
+4. En la clase **ViewController** Implementa el método **addAnonymus** en la extensión que contiene los métodos del delegado.
 
-![](0.png)
+5. En el método agrega un nuevo **Person** con _Nombre_: "Anonymus", _Age_: "??" y _PhoneNumber_: "***********".
 
-El código aquí mostrado permite visualizar la imágen en el playground.
+6. Agrega el nuevo **Person** al arreglo y refresca la tabla.
 
-Usar **DispatchQueues**.
+## El resultado deberá de verse así:
 
-<details>
-	<summary>Solución</summary>
-	<p>Agregamos una URL valida.</p>
-	<p>Creamos una función que invoque a performRequest(), dentro de un DispatchQueue.</p>
-	
-```
-func perform() {
-  let globalQueue = DispatchQueue.global(qos: .userInitiated)
-   globalQueue.async {
-     performRequest()
-     //....
-   }
-}
-```
-<p>En el main thread actualizamos la vista del playground.</p>
-
-```
-func perform() {
-  let globalQueue = DispatchQueue.global(qos: .userInitiated)
-   globalQueue.async {
-     performRequest()
-    DispatchQueue.main.async {
-      //Show Image
-      PlaygroundPage.current.liveView = view
-      PlaygroundPage.current.liveView
-      
-    }
-  }
-}
-```
-</details> 
+![0.png]

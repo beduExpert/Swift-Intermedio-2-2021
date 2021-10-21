@@ -1,74 +1,34 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Post Request
+## Ejemplo 02 - Sesión 07 - Protocolos y delegados y como llamar a los métodos desde el delegado.
 
 ### OBJETIVO
 
-- Desarrollo de un POST request con URLSession.
+- Comprender cómo se ejecutan los métodos de los delegados.
 
 #### REQUISITOS
 
-1. Xcode 11
-2. Playgrounds
-3. Conectividad a Internet
+1. Xcode 12+
+2. [El proyecto del postwork](../Postwork/DelegatesExample)
 
 #### DESARROLLO
 
-Similar a nuestro `GET` request del `Ejemplo-01`, realizaremos un `POST` request.
+* En este ejemplo analizaras la implementación de un delegado.
 
-Recuerda especificar el método:
+1. Abre la app. de ejemplo del postwork (link arriba).
 
-```
-var request = URLRequest(url: url)
-request.httpMethod = "POST"
-```
+2. Abre **AddPersonViewController**.
 
-Creamos el body de los datos a enviar:
+3. Observa como está definido el protocolo que implementara al delegado.
 
-```
-let postDict : [String: Any] = ["name": "Bedu",
-                                "favorite_animal": "Chihuahua"]
-                                
-func generateBody() {
-	guard let postData = try? JSONSerialization.data(withJSONObject: postDict, options: []) else { return }
-  request.httpBody = postData
-}
-```
+![0.png]
 
-Ejecutar el session.dataTask par acrear el request:
+4. Observa como está declarado el delegado (y observa que al final está marcado como _optional_).
 
-```
-let task = session.dataTask(with: request) { data, response, error in
-  
-    // ensure there is no error for this HTTP response
-    guard error == nil else {
-        print ("error: \(error!)")
-        return
-    }
-  
-    // ensure there is data returned from this HTTP response
-    guard let content = data else {
-        print("No data")
-        return
-    }
-  
-    // serialise the data / NSData object into Dictionary [String : Any]
-    guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
-        print("Not containing JSON")
-        return
-    }
-  
-    print("gotten json response dictionary is \n \(json)")
-    // update UI using the response here
-}
-```
+5. Dentro de la acción de **addPerson** observa como se llama al método del delegado.
 
-Finalmente ejecutamos todo:
+6. Abre la clase **ViewController** del Ejemplo.
 
-```
-// execute the HTTP request
-generateBody()
-task.resume()
-```
+7. En la parte final, observa la extensión del **ViewController** que implementa el método del delegado.
 
-
+8. Este método **addPerson** hace la implementación en este **ViewController** y se manda a llamar desde **AddPersonViewController** pasandole el parametro requerido.

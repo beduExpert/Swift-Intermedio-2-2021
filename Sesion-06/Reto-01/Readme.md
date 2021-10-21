@@ -16,6 +16,8 @@
 
 Aplica lo que has aprendido en el prework.
 
+## Parte 1
+
 1. Crea un nuevo _Playground_.¡
 2. Crea una clase llamada **Vehicle**.
 3. Define las siguientes propiedades:
