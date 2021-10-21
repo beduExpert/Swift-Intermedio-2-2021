@@ -27,4 +27,4 @@
 
 ## El resultado deberá de verse así:
 
-![0.png]
+![](0.png)

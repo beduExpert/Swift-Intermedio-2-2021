@@ -4,7 +4,7 @@
 
 ### OBJETIVO
 
-- Extender el uso del ejercicio aquí proveido.
+- Extender el uso del ejercicio aquí proveído.
 
 #### REQUISITOS
 
@@ -14,7 +14,7 @@
 
 #### DESARROLLO
 
-1. Utilizando el playground de ejemplo, crea una extensión dela clase **Human** y define un método nuevo, llamado **canThink()** en la implementación imprime **Los humanos pueden pensar**.
+1. Utilizando el playground de ejemplo, crea una extensión de la clase **Human** y define un método nuevo, llamado **canThink()** en la implementación imprime **Los humanos pueden pensar**.
 
 2. Llama al método **canThink()** desde la instancia **human**.
 

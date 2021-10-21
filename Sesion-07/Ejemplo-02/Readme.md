@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo 02 - Sesión 07 - Protocolos y delegados y como llamar a los métodos desde el delegado.
+## Ejemplo 02 - Sesión 07 - Protocolos y delegados y cómo llamar a los métodos desde el delegado.
 
 ### OBJETIVO
 
@@ -9,7 +9,7 @@
 #### REQUISITOS
 
 1. Xcode 12+
-2. [El proyecto del postwork](../Postwork/DelegatesExample)
+2. [El proyecto del postwork](/Postwork/DelegatesExample)
 
 #### DESARROLLO
 
@@ -21,7 +21,7 @@
 
 3. Observa como está definido el protocolo que implementara al delegado.
 
-![0.png]
+![](0.png)
 
 4. Observa como está declarado el delegado (y observa que al final está marcado como _optional_).
 
@@ -31,4 +31,4 @@
 
 7. En la parte final, observa la extensión del **ViewController** que implementa el método del delegado.
 
-8. Este método **addPerson** hace la implementación en este **ViewController** y se manda a llamar desde **AddPersonViewController** pasandole el parametro requerido.
+8. Este método **addPerson** hace la implementación en este **ViewController** y se manda a llamar desde **AddPersonViewController** pasándole el parámetro requerido.
