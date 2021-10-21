@@ -9,7 +9,7 @@
 #### REQUISITOS
 
 1. Xcode 12+
-2. [El proyecto del postwork](/Postwork/EjemploDelegados)
+2. El proyecto del postwork
 
 #### DESARROLLO
 
