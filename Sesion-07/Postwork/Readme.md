@@ -1,34 +1,45 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Music App
+## Sesión 07 - Postwork - Programación orientada a protocolos. Herencia y Extensiones.
 
 ### OBJETIVO
 
-- Poner a punto el proyecto de Music app, tener los puntos implementados para la sesión final.
+- Implementar una vista para presentar el detalle de un registro.
+- Implementar un método de un protocolo para eliminar registros llamandolo desde el delegado.
 
 #### REQUISITOS
 
-1. Último proyecto de music app.
-2. Xcode 11
-3. Conectividad a Internet
+2. Xcode 12+
+3. [Proyecto de ejemplo para este módulo](EjemploDelegados)
 
 #### DESARROLLO
 
-Hacer una revisión del proyecto de **Music App** el cual debe contener lo siguiente:
+## Parte 1
 
-- La vista principal de la Lista de Canciones:
-	
-	- Debe realizar un GET request el cual poble las celdas.
-	- Este GET request debe basar su response en un objeto mediante Structs y Decodable.
-	
-- La vista de reproducción de música:
+* Crea un nuevo **ViewController** llamado **PoepleDetailViewController** en tu proyecto de ejemplo.
 
-	- Debe mostrar el avance del progress bar al dar click en el botón de play.
-	- El estilo del botón de play debe cambiar de color al ser seleccionado.
-	- La imagen del CD o Cover del Álbum debe mostrarse realizando un HTTP Request.
+* Crea 3 **IBOutlet** que hagan referencia a 3 **UIlabels** que contendrán el _nombre, edad y teléfono_ de una persona.
 
+* Crea una variable que pueda contener un objeto tipo **Person**.
 
-#### Generalidades:
+* En **Interface Builder** crea el nuevo **ViewController** y haz todas las conexiones necesarias.
 
-El proyecto debe tener su código en su mayoría en el `ViewController`.
+* Desde el **ViewController** deberás de instanciar el nuevo **PeopleDetailViewController** y le pasaras la persona seleccionada.
+
+* Deberás de mostrar esa persona en el detalle.
+
+## Parte 2
+
+* En **AddPersonViewController** en el protocolo **AddPersonDelegate** crea un nuevo método, llamalo **deletePerson** que reciba un **Person** como parámetro.
+
+* En **AddPersonViewController** Crea una nueva **IBAction** llamada **deletePerson** la cual reciba un **Person** como parámetro.
+
+* Adentro del **IBAction** implementa la llamada al método del protocolo que se encargará de borrar el registro.
+
+* En **Interface Builder** Crea un nuevo botón para **Borrar Persona** y conectalo con el **IBAction**.
+
+* En **ViewController** en la parte de la **extension** implementa el método para eliminar registro.
+
+* En la implementación deberás de buscar en el arreglo a ese Objeto y lo borraras.
+
+* Luego actualizaras la tabla.
