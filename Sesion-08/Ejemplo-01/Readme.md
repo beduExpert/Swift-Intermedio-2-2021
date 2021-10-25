@@ -1,25 +1,51 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Ejemplo MVP
+## Ejemplo 01 - Sesión 08 - Patron MVVM.
 
 ### OBJETIVO
 
-- Ejemplificar de la manera mas simple como implementar el patrón MVP.
+- Ejemplo de implementación del **Model**.
 
 #### REQUISITOS
 
-1. Xcode 11
+* Observa la implementación básica del **Model**
 
 #### DESARROLLO
 
-Se creará una pequeña app que cuente los taps del boton. 
+1. Comprende la implementación del **Model**.
 
-Se crearán las capas de Modelo, Vista y Presentador.
+* Dentro del **Model** deberás de declarar la o las variables que requieres a modo de contenedor de datos.
 
-Las partes que conforman este patrón:
-El código del View
-El de los modelos
-El del presenter.
+	```
+	var phoneContactName: String?
+	```
 
-![](0.gif)
+* Creas dos inicializadores de la sig. forma:
+
+	```
+	init(phoneContactName: String) {
+		self.phoneContactName = dictionary["phoneContactName"] as? String
+	}
+
+	init(dictionary: NSDictionary) {
+        self.phoneContactName = dictionary["phoneContactName"] as? String
+    }
+	```
+### Un Inicializador se usa cuando recibes un parametro tipo **String** y otro para cuando recibes un parametro tipo **Dictionary**.
+
+* Crearás también un método que sea capaz de agregar los **items** del _Array_.
+
+	```
+	public class func modelFromDictionaryArray(array: NSArray) -> [Model] {
+        var items = [Model]()
+        for data in array {
+            items.append(Model(dictionary: data as! NSDictionary))
+        }
+        return items
+    }
+	```
+* De esta forma tendrás los datos listos dentro de tu **Model**.
+
+* La implementación de tu **Model** deberá de verse de la sig. manera:
+
+* ![](0.png)
