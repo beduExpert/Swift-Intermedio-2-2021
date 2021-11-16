@@ -1,31 +1,26 @@
-
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Protocolos 
+## Sesión 05 - Closures y Extensions
 
 ### OBJETIVOS 
 
-- Entender los diferentes conceptos relacionados con la Prog. Orientada a Protocolos.
-
-- Implementar diferentes estructuras, enums y clases utilizando protocol conformance y herencia.
+- Implementar **Closures** en métodos para realizar acciones obteniendo un tipo de dato de regreso.
+- Implementar **Extensions** a tipos de datos del sistema operativo, para extender sus capacidades y escribir métodos personalizados.
+- Implementar **Extensions** a las propias clases para separar su funcionalidad dependiendo de su implementación y tener un código más limpio.
 
 
 #### ORGANIZACION DE LA CLASE 
 
-- Properties, Methods, Optionals 
+- Closures 
 
  	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Herencia
+- Extensions
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Protocolos con Estructuras y Clases. Extensions.
+#### Postwork
 
-	- [Ejemplo 03](Ejemplo-03)
-
-- Equatable Protocol.
-
-	- [Reto 03](Reto-03)
+- [Postwork](Postwork)

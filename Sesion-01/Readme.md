@@ -1,36 +1,38 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Optionals
+## Sesión 01 - Optionals, Property Observers y Higher Order Functions.
 
 ### OBJETIVOS 
 
-- Aprender a manipular los Optionals tanto como en variables, como colecciones y evitar valores nulos.
-- Crear código seguro y evitar errores utilizando estructura de manejo de Optionals.
-- Aprender qué es un Observador.
-- Utilizar las funciones de alto orden para Unwrapping. 
+* Identificar qué es una variable tipo **_Optional_**.
+* Analizar qué es el **Force unwrap**.
+* Verificar si nuestras variables **NO** son _nil_.
+* Implementar el **_if let_**
+* Demostrar la elaboración de **_Safe unwrapping_**.
 
-#### ORGANIZACION DE LA CLASE 
+#### ORGANIZACIÓN DE LA CLASE 
 
-- Optionals con Data Types Nativos y Collections
-- Unwrap
-- Estructuras para manejo de Optionals: IF CASE LET, GUARD.
-
+- Optionals
+* Force Unwrap
+* Check if nil
+* if let
+* guard let
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
 - Property Observers
+* Identifica cuándo se implementan y cómo las puedes utilizar con la finalidad de monitorear cambios en una variable dentro de una clase.
 
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- High order functions para Unwrapping.
+- Higher Order Functions.
+* Identifica cómo puedes hacer interacciones en colecciones de datos y aplicar tipos de filtros u operaciones a las mismas, para que obtengas una colección diferente.
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-
-### Postwork 
+### PostWork 
 
 [Postwork](Postwork)
-

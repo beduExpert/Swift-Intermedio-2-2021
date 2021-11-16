@@ -1,51 +1,19 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Multipes Operations
+## Ejemplo 02 - Sesión 06 - Polimorfismo.
 
 ### OBJETIVO
 
--  Crear un simple operation que ejecute un print. Luego, crear una serie de operations.
+- Saber implementar _subclases_ y modificar métodos.
 
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12+
+2. Playgrounds.
 
 #### DESARROLLO
 
-1.- Crearemos un simple operation que ejecute un print.
-2.- Implementar en un Playground.
-
-```
-// Operation via block
-let operation = BlockOperation {
-  print("some process")
-}
-
-// Function that handles operation to start
-func operationQueue() {
-  operation.start()
-}
-
-//Execute
-operationQueue()
-```
-
-3.- La serie de Operations a crear consiste en dividir un String en substrings, se utilizará un execution block para imprimir cada substring.
-
-```
-func operationStrQueue() {
-  let str = "Hello world swift"
-  let operation = BlockOperation()
-
-  for string in str.split(separator: " ") {
-    operation.addExecutionBlock {
-      print(string)
-    }
-  }
-  operation.start()
-}
-
-operationStrQueue()
-```
+1. Utiliza el mismo playground del Ejemplo 01 de esta sesión.
+2. En la clase base, cambia la propiedad **Talk** por un método y no implementes nada.
+3. En las instancias de las subclases **Duck, Dog y Human** has un **override** del método talk e imprime el valor del sonido que hace cada _animal_.

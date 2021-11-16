@@ -1,54 +1,42 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Enums y Protocols
+## Ejemplo 02 - Sesión 05 - Extensions.
 
 ### OBJETIVO
 
-- Aprender a conformar protocolos con enums.
+- Implementar **Extensions** a tipos de datos del sistema operativo, para extender sus capacidades y escribir métodos personalizados.
+- Implementar **Extensions** a las propias clases para separar su funcionalidad dependiendo de su implementación y tener un código más limpio.
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12+.
 2. Playgrounds.
 
 #### DESARROLLO
 
-Definimos un protocolo con una función utilizando mutating.
-
+- Crea un playground nuevo.
+- Implementa una extensión de **Int**.
+- Crea un método de **repeticiónes** que reciba una tarea y que la ejecute el núm. de veces que se le indique (dentro de un ciclo _for_).
 ```
-protocol Playable {
-  mutating func play()
-}
-```
-
-Implementar el protocolo `Playable`.
-
-Crear un `Enum` que cambie el estado de play a stop y viceversa.
-
-Esto dentro de la función `play()`.
-
-```
-enum Song: Playable {
-  case play, stop
-  mutating func play() {
-    switch self {
-    case .play:
-      print("is playing")
-      self = .stop
-    default:
-      print("is stopped")
-      self = .play
+extension Int { // declaras la extension
+  func repetitions(task: () -> Void) { // declaras el método personalizado, llamado _repetitions_
+    for _ in 0..<self { // ejecutas la tarea el núm. de veces indicado
+      task()            // la tarea.
     }
   }
 }
 ```
-
-Creamos una instancia y probamos el funcionamiento.
-
+- Indica un núm _N_ de repeticiones para imprimir un texto.
 ```
-// Instancia
-var sss = Song.play
-sss.play()
+5.repetitions { // llamamos al método personalizado que extiende de _Int_, llamado _repetitions_.
+  print("hola!") // ejecutamos el núm. de veces esta tarea.
+}
 ```
-
-
+- El resultado en la consola deberá de ser:
+```
+hola!
+hola!
+hola!
+hola!
+hola!
+```

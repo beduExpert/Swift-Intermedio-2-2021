@@ -1,41 +1,25 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Modelo de canción
+## Ejemplo 02 - Sesión 03 - Structs
 
 ### OBJETIVO
 
-- Crear una Estructura para una Canción.
+- Entender el comportamiento de una **struct** y saber lo que es un _Value Type_
 
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12
 2. Playgrounds
 
 #### DESARROLLO
 
-1.- Crear una estructura con los datos de una canción.
+1.- Crear una estructura que sea igual que nuestro ejemplo anterior _(de **class**)_.
 
-2.- Con mutating estableceremos cuantas veces se ha reproducido. Iremos actualizando la variable `timesPlayed`.
+2.- Agregar algunas propiedades, por lo menos **name: String** y **title: String**.
 
-```
-// Sesion-03, Ejemplo-02
-import AVFoundation
+3.- Crear copias entre las estructuras, modificar parámetros y ver el comportamiento.
 
-struct Song {
-  let name: String
-  let album: String
-  var timesPlayed: Int = 0
-  
-  mutating func hasBeenPlayed() {
-    timesPlayed += 1
-  }
-}
-
-var song: Song = Song(name: "Song name",
-                      album: "Rock band")
-song.hasBeenPlayed()
-print(song.timesPlayed)
-```
-
+#### Solución:
+[Solución](SongStruct.playground/Contents.swift)

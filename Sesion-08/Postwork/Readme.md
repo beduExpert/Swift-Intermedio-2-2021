@@ -1,27 +1,27 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Titulo del Ejemplo
+## Sesión 08 - Postwork - Patrones de diseño de arquitectura de apps.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Entregar con el / la mentor(a) la app de ejemplo finalizada, compilando sin problemas y funcionando.
+* La funcionalidad esperada será:
+   * Presentar un listado de _Contactos_ prellenado.
+   * Poder introducir un nuevo _Contacto_.
+   * Mostrar una _Alerta_ confirmando que el _Contacto_ ha sido agregado con éxito.
+   * Refrescar la _Tabla_ de _Contactos_.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 12+.
+2. La app que has estado utilizando en esta sesión.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+* Analiza la funcionalidad de la app, comenta con tu mentor(a) el patrón de diseño **MVVM**.
 
-<details>
+* La App final se deberá de ver así:
+* ![](0.png)
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+# ¡FELICIDADES, HAS COMPLETADO CON ÉXITO EL MODULO DE SWIFT INTERMEDIO II!
+# ¡NOS VEMOS LA PRÓXIMA!

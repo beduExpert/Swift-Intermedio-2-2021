@@ -1,122 +1,54 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Polimorfismo y el operador "as"
+## Ejemplo 03 - Sesión 03 - Enums
 
 ### OBJETIVO
 
-- Comprender como funciona el polimorfismo en Swift y el uso de los diferentes operadores "as" existentes.
+- Implementar Enums.
 
 #### REQUISITOS
 
-1. Xcode 11
+1. Xcode 12+
 2. Playgrounds
 
 #### DESARROLLO
 
-![](0.png)
+1.- En un Playground, implementar un **Enum** como en el ejemplo mostrado.
 
-1.- Crear un playground nuevo.
+2.- Este Enum deberá tener el caso de **success** y **error**.
 
-2.- En ese playground definir las siguientes enumeraciones, si el alumno lo desea puede agregar mas opciones y valores.
+3.- Por medio de un URL Path asignar el nombre de una canción, si existe, entonces entra al caso de success y si no, entrará al caso de error.
 
 ```
-enum Genre {
-  case male
-  case female
-  case other
-}
-
-enum EducationLevel {
-  case bachelor
-  case master
-  case Phd
-}
-
-enum Sport {
-  case soccer
-  case futbol
+enum Playable {
+  case success(_ path: String)
+  case error(message: String)
 }
 ```
 
-3.- Comenzaremos creando la clase padre `Person`, recuerda que en el diagrama aparecen las variables con un guión **-** y los métodos con un paréntesis al final del nombre.
+Nos apoyaremos de una función.
+El código final es:
 
 ```
-class Person {
-  
-  var name: String
-  var age: Int
-  var genre: Genre
-  var height: Float?
-  var weight: Float?
-  
-  init(name: String, age: Int, genre: Genre) {
-    self.name = name
-    self.age = age
-    self.genre = genre
+
+enum Playable {
+  case success(_ path: String)
+  case error(message: String)
+}
+
+func loadSong() {
+  let file = Bundle.main.path(forResource: "song", ofType: "mp3")
+  let path = isPlayable(file)
+  if case .success = path {
+    print("puede reproducirse")
   }
-  
-  //Methods
-  func eat() {
-    print(#function)
-  }
-  
-  func talk(){
-    print(#function)
-  }
-  
-  func run() {
-    print(#function)
+  if case .error(let msg) = path {
+    print(msg)
   }
 }
-```
 
-4.- Creamos la primera herencia, de clase `Student` con `Person`.
-Utilizamos `super` para escribir las propiedades de la clase padre.
-
-```
-class Student: Person {
-  var school: String?
-  var educationLevel: EducationLevel?
-  var academicAverage: Float?
-  
-  init(name: String, age: Int, genre: Genre, school: String, educationLevel: EducationLevel){
-    self.school = school
-    self.educationLevel = educationLevel
-    super.init(name: name, age: age, genre: genre)
-  }
-  
-  func goParty() {
-    print(#function)
-  }
+func isPlayable(_ path: String?) -> Playable {
+  guard let path = path else { return .error(message: "not playable")}
+  return .success(path)
 }
-```
-
-5.- Creamos la siguiente clase, `Player`. Este hereda de `Student`.
-
-```
-class Player: Student {
-  var sport: Sport?
-  var number: Int?
-  var team: String?
-
-  func canPlay() {
-     print(#function)
-  }
-}
-```
-
-6.- Finalmente realizamos la instancia de clases y utilizamos el operador `as`.
-
-Nota: Crear tantas instancias como se deseen.
-
-```
-
-let ric = Person(name: "Ric", age: 28, genre: .male)
-let student = Student(name: "Ricardo", age: 28, genre: .male, school: "Bedu", educationLevel: .bachelor)
-
-let cast = student as Person
-cast.weight
-
-let downcast = ric as? Student
-downcast?.academicAverage
 ```

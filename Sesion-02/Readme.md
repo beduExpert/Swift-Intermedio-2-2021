@@ -1,27 +1,44 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Nib files, Storyboards y Constraints 
+## Sesión 02 - Consumo de servicios REST con URLSession.
 
-### OBJETIVOS 
+### OBJETIVOS
 
-- Aprender a utilizar Constraints mediante código así como utilizar multiples Storyboards y Xibs.
-- Aprender a utilizar ScrollView y Collection View.
+- Implementa un APIManager.
+- Utiliza URLSession dentro del APIManager.
+- Detecta la conectividad a internet.
+- Protocolo Codable.
+- Uso de Coding Keys.
 
-#### ORGANIZACION DE LA CLASE 
+#### ORGANIZACIÓN DE LA CLASE 
 
-- Nib files, Storyboards y Constraints.
+- Implementa un APIManager.
+* En tu app del proyecto, crea un nuevo grupo llamado _**Utils**_
+* Dentro de _**Utils**_ crea un nuevo _Swift File_ y nombralo _**APIManager**_
+* Haz APIManager tipo _Singleton_
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-	- [Ejemplo 02](Ejemplo-02)
+
+- Implementa URLSession dentro del APIManager.
+* Dentro la clase anterior, crea un método llamalo _getSongs_ dentro del cual implementaras URLSession
+
 	- [Reto 02](Reto-02)
 
-- Controles básicos: ScrollView, CollectionView,...
-- CollectionView con vista de detalle.
+- Detecta la conectividad a internet.
+* Dentro del APIManager, crea un nuevo método que te permitirá determinar si hay conexión a Internet.
 
 	- [Reto 03](Reto-03)
 
-- Constraints mediante código. Autolayout.
+- Protocolo Codable.
+* A la clase _**Song**_ haz que conforme al protocolo _Codable_.
 
-	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 04](Reto-04)
 
+- Uso de Coding Keys.
+* Implementa el uso de _**Coding keys**_ en la clase _**Song**_ para cambiar un parámetro por uno que se adapte mejor a las mejores prácticas.
+
+	- [Reto 05](Reto-05)
+
+### PostWork
+[PostWork](Postwork)

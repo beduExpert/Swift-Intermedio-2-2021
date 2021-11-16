@@ -1,60 +1,31 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Reto closures
+## Reto 01 - Sesión 04 - Archivos .xib
 
 ### OBJETIVO 
 
-- Aprender a implementar closures con Implicit Returns y como Shorthand Arguments.
-
+- Implementar conexiones y cambiar el **rootViewController** en el **SceneDelegate**
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Playgrounds.
+1. Xcode 12+.
+2. El proyecto del [Ejemplo 01](Ejemplo-01).
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Abre el proyecto del ejemplo.
+* Asegurate de abrir la vista **LoginView**.
+* Has las conexiones de los **IBOutlets** de la clase **LoginViewController** que creaste.
+* Has la conexión del botón con el **IBAction**.
+* Elimina la referencia de **ContentView** y agrega la referencia de **View**.
+![](1.png)
 
+2.- Borra la clase **LoginView.swift**.
+
+3.- En el **SceneDelegate** cambiá el **ViewController** de inicio, por el **LoginView** y haz que el **RootViewController** sea la nueva instancia.
 <details>
-	<summary>Solución</summary>
-	<p> 1.- Declaramos una variable en dond el tipo de dato será:</p>
-	
-```
-() -> String
-```
-<p> Dando como resultado: </p>
-
-```
-let myName: () -> String = { () in
-  return "Richie"
-}
-```
-
-<p> 2.- Creamos un closure donde el tipo de dato tendra dos parametros de tipo Int y una variable de retorno de tipo Int también.</p>
-<p> Recordamos que no usaremos Return y usaremos una estructura de tipo Short Hand.</p>
-
-```
-var multiplyClosure: (Int, Int) -> Int = {
-  $0 * $1
-}
-multiplyClosure(3, 5)
-```
-
-<p> 3.- Crearemos un capture list, cada elemento de la lista es un closure.</p>
-
-```
-var captureList = [()->()]()
-
-for value in 0...10 {
-  captureList.append { [value] in
-    print("Value is \(value)")
-  }
-}
-
-captureList[10]()
-```
-
-</details> 
-
-
+        <summary>Solución</summary>
+        <p> let scrollVC = ScrollViewController(nibName: "ScrollViewController", bundle: nil)</p>
+        <p> let loginVC = LoginViewController(nibName: "LoginView", bundle: nil)</p>
+        <p> ... .rootViewController = loginVC</p>
+</details>

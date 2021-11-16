@@ -1,50 +1,45 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## MVP con completions
+## Reto 01 - Sesión 08 - Patrón MVVM.
 
 ### OBJETIVO 
 
-- Notificar al View mediante Closures creados en el Presenter. 
+- Terminar la implementación del **Model**. 
 
 #### REQUISITOS 
 
-1. Ejemplo-01
-2. Xcode 11
+1. Xcode 12+
+2. App de Ejemplo para esta sesión [App de Ejemplo](MVVM-iOS-App-start)
 
 #### DESARROLLO
 
-Modificación de la App con patrón MVP agregando Completions para notificar al View.
-
-Modular pequeñas funcionalidades en Clases, e implementar completions simples a manera de closures o pasando las funciones.
-
-![](0.png)
+- En este caso ya has visto como se implementa parte del **Model**, pero si observas, en la app de ejemplo, se manejan **dos** datos, el _nombre_ que ya viste como se implementa en el Ejemplo 01 y el num. de tél. que tendrás que implementar en este reto.
 
 <details>
 	<summary>Solución</summary>
-	<p> Agregar un nuevo elemento a la App, un **TextField**.</p>
+	<p> Agregar un nuevo elemento al **Model**.</p>
 
 ```
-	@IBOutlet weak var inputText: UITextField!
+	var phoneContactNumber: String?
 ```
 
-<p> Agregar una nueva función al Presenter, esta función tendra un completion que notificará al View de cambios. </p>
+<p> Integra la nueva variable a los métodos **init**. </p>
 
 ```
-  func processInPresenter(input: String, completion: (String) -> Void) {
-    // Some example code...
-    completion("\(input) Has been procesed!")
+  init(phoneContactNumber: String, phoneContactName: String) {
+        self.phoneContactNumber = phoneContactNumber
+        self.phoneContactName = phoneContactName
+  }
+
+
+  init(dictionary: NSDictionary) {
+        self.phoneContactNumber = dictionary["phoneContactNumber"] as? String
+        self.phoneContactName = dictionary["phoneContactName"] as? String
   }
 ```
+* Con esto tienes terminado tu **Model**.
 
-<p> Finalmente, en el ViewController agregamos la funcionalidad del Input para que conviva con esta nueva función. </p>
+* Así se deberá de ver la implementación final del **Model**
 
-```
-guard let text = self.inputText.text else { return }
-presenter.processInPresenter(input: text) { (result: String) in
-	print("Processed value: \(result)")
-}
-```
-
+* ![](0.png)
 </details> 
-

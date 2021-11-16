@@ -1,35 +1,35 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Esqueleto de la App
+## PostWord de la Sesión 1
 
 ### OBJETIVO
 
-- Crear la App que servirá de partida para el proyecto final.
+- Comienza a implementar nueva funcionalidad.
+- Mejora la estructura de la app de música
+- Al llegar a la sesión 8, tendras el proyecto final.
 
 #### REQUISITOS
 
-1. Xcode 11
-2. Ejemplo-01 terminado
+1. Xcode 12+
 
 #### DESARROLLO
 
-Completar el Layout.  
+Realiza las implementaciones que se propusieron en el _Work_.  
 
 **Requisitos:**
 
-1.- Crear un TableView con custom cells.
+1.- Crea una _class_ nueva, llamada _Song_ que incluya algunos **_Optionals_**.
+- Utiliza el [Reto 01](Reto-01).
 
-2.- Agregar constraints para replicar los tamaños en la vista.
+2.- Crea un **_Property Observer_** que por ahora imprima el _oldValue_ implementando el método _didSet_.
+- Utiliza el [Reto 02](Reto-02).
 
-3.- Asignar iconos.
+3.- Juega con **_Higher Order Functions_**.
+- Utiliza el [Reto 03](Reto-03).
+- Lee el material que se utilizó en el **_Prework_**
 
-4.- Al seleccionar una celda ir a la vista de reproducción.
+Estructura final:
 
-NOTA: Cuidar el uso de Optionals.
-Property Observers podrían omitirse de momento, pero si se quieren implementar, utilizarlos en el progressbar y labels de tiempo de progreso la canción.
-
-Interfaz sugerida:
-
-![](0.png)
+![](estructuraFinal.png)
 

@@ -1,32 +1,35 @@
+
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## App inicial para proyecto final
+## Reto 01 - Sesión 01 - App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 
-- Crear una maqueta de App para comenzar el desarrollo del proyecto final.
+- En este primer reto incluirás lo siguiente:
+* Comienza a organizar de una mejor manera la estructura del proyecto.
+* Crea una estructura capaz de recibir datos nulos (uso de _optionals_).
 
 #### REQUISITOS 
 
-1. Xcode 11
+1. Xcode 12+
 
 #### DESARROLLO
 
-1.- Crear un nuevo proyecto con Swift y Storyboard.
+1.- Abre tu App de música.
 
-2.- Implementar una App que tenga dos vistas similares a la mostrada en la imágen.
+2.- Crea una _struct_ llamada _Song_ dentro de un grupo llamado _Models_ en la raíz del proyecto.
 
-3.- Los [iconos](icons) estan en el repositorio.
-
-![](0.png)
-
-> Fuente: https://dribbble.com/shots/7945280-Music-Player
+3.- Las propiedades que contendrá la _struct_ son las siguientes:
+* **song_id** de tipo _String_.
+* **name** de tipo _String_.
+* **duration** de tipo _Double_ y _Opcional_.
+* **artist** de tipo _String_ y _Opcional_.
+* **genre** de tipo _String_ y _Opcional_.
 
 <details>
         <summary>Solución</summary>
-        <p> Una vez creado el proyecto ir al Storyboard.</p>
-        <p> Agregar dos ViewControllers</p>
-        <p> Al primer ViewController agregarle un TableView con celdas customizadas.</p>
-        <p> Al segundo ViewController agregarle los elementos de UIImageView, UILabels, UIButtons para la reproducción de video y un ProgressBar.</p>
-        <p> Al seleccionar una celda ir a la vista de reproducción de musica.</p>
+        <p> Abrir el proyecto.</p>
+        <p> Crear un Grupo llamado Models</p>
+        <p> Crear un archivo tipo <i>Swift File</i> llamado Song</p>
+        <p> Agregar las propiedades enlistadas, las marcadas cómo optional, deberán terminar con ?</p>
 </details>

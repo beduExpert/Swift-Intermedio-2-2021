@@ -1,72 +1,52 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## App con arquitectura ViewModel
+## Ejemplo 02 - Sesión 08 - Patron MVVM.
 
 ### OBJETIVO
 
--  Crear una app de Login utilizando el patrón MVVM.
+- Ejemplo de implementación del **ViewController**.
 
 #### REQUISITOS
 
-1. Xcode 11
+* Observa la implementación básica del **ViewController**
 
 #### DESARROLLO
 
-Crear una nueva app con patrón MVVM.
+1. Comprende la implementación del **ViewController**.
 
-Se implementarán completion y dispatch_queues para desargar la imagen de profile.
+* Dentro del **ViewController** deberás de declarar la o las variables que requieres a modo de conexión entre la _Vista_ y el _Model_.
 
-**Notas de experto:**
+* Lo primero que tienes que hacer es crear una variable llamada **viewModel** del tipo **ViewModel** de tipo _Optional_.
 
-1.- Comenzamos en el ViewController agregando tres elementos de UI, dos textfiedls y un image view.
+  ```
+  var viewModel: ViewModel?
+  ```
 
-```
-  @IBOutlet weak var input1: UITextField!
-  @IBOutlet weak var input2: UITextField!
-  @IBOutlet weak var imageView: UIImageView!
-```
+* En el método **viewDidLoad()** harás la asignación del _delegado_ en **viewModel** a este mismo **ViewController**:
 
-2.- Creamos el archivo de clase de ViewModel, ejemplo:
+  ```
+  viewModel = ViewModel(viewDelegate: self)
+  ```
+* Como estás utilizando una **Tabla** deberás también de implementar el registro de la **Celda** y asignar al **ViewController** como _delegado_.
 
-```
-class ViewModel {
-  
-  var user: User?
-  
-  func validate(user: String, password: String) -> Bool {
-    // Validation code...
-    self.user = User(name: user, password: password)
-    return true
-  }
-  
-  func download(url: String, completion: @escaping (UIImage) -> Void) {
-    guard let url = URL(string: url) else { return }
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-      if error == nil, let imageData = data {
-        completion(UIImage(data: imageData)!)
-      }
-    }
-    task.resume()
-  }
-  
-}
-```
+  ```
+  let nib = UINib(nibName: "CustomItemTableViewCell", bundle: nil)
+  itemTableView.register(nib, forCellReuseIdentifier: "itemCell")
+  itemTableView.dataSource = self
+  itemTableView.delegate = self
+  ```
+* De esta forma tendrás el inicializador del **ViewControler** listo.
 
-3.- Implementamos el algoritmo para descargar una imagen.
-Creamos logica utilizando closures.
+* Crea también un **IBAction** que se conecté con el **UIButton** de la vista, al cúal le pases **phoneName** y **phoneNumber** al **viewModel**.
 
 ```
- guard let input1 = input1.text, let input2 = input2.text else { return }
-    let result = viewModel.validate(user: input1, password: input2)
-    if result {
-      // if usr exists, download image
-      let url: String = "https:....png"
-      viewModel.download(url: url) { data in
-        DispatchQueue.main.async {
-          self.imageView.image = data
-        }
-      }
+    @IBAction func AddItemAction(_ sender: UIButton) {
+        viewModel?.onItemAddClick(phoneName: phoneNameTextField.text!, phoneNumber: phoneNumberTextField.text!) //Estamos utilizando **forceUnwrap** lo puedes méjorar en la sección del Reto 02.
     }
 ```
 
+* La implementación de tu **ViewController** deberá de verse de la sig. manera:
+
+* ![](0.png)
+
+# Nota: Por ahora aparecen algunos errores porque hace falta la implementación de los delegados que conformen a los protocolos que ya hemos definido, eso lo solucionarás en la sesión del Reto 02.

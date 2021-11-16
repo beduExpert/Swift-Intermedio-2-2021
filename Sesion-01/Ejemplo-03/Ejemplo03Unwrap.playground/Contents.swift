@@ -2,7 +2,11 @@ import UIKit
 
 let values: [String?] = [nil, nil, nil, "B","E","D","U"]
 for v in values {
-  print(v)
+    if let value = v {
+        print(value)
+    } else {
+        print("Valor nulo")
+    }
 }
 
 print("\nFor Each")

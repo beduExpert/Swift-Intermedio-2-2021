@@ -1,76 +1,47 @@
+
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## Reto Mario Bros
+## Reto 02 - Sesión 01 - App inicial para proyecto final retomada del módulo anterior.
 
 ### OBJETIVO 
 
-- A perfeccionar el uso de Property Observers. 
+- En este segundo reto incluirás lo siguiente:
+* Comienza a organizar de una mejor manera la estructura del proyecto.
+* Crea una clase que contendrá propiedades que pueden ser observadas y posteriormente reflejadas en la UI (_Property Observers_).
 
 #### REQUISITOS 
 
-1. Xcode 11
-2. Playgrounds
+1. Xcode 12+
 
 #### DESARROLLO
 
-Así como se implementó un código mediante Property Observers para cuando Mario crece, hacer uno para cuando Mario se enfrente a un enemigo.
+1.- Abre la App de música.
 
-En caso de agotar todas sus vidas *(llegue a cero vidas)* no permitir aumentar vidas a Mario.
+2.- Crea una _class_ llamada _CurrentSong_ dentro de un grupo llamado _Views_ en la raíz del proyecto.
+
+3.- Las propiedades que contendrá la _class_ son las siguientes:
+* **name** de tipo _String_.
+* **duration** de tipo _Double_.
+* **timePlayed** de tipo _Double_ y aquí define que es una _**Property Observer**_. Crea su método en el _**didSet**_ e imprime el valor anterior.
 
 <details>
-	<summary>Solución</summary>
-	<p> Crear un pequeño algoritmo dentro de un Property Observer que permita asignar un valor</p>
-	<p> Agregar un Property Observer que permita cambiar el valor de lifes y del tamaño de Mario.</p>
-	<p> Agregar una condición que permita saber si el juego ha terminado, asignandole el valor de True a gameOver.</p>
-	
-```
-enum Mario {
-  case small, big
-}
+        <summary>Solución</summary>
+        <p> Abre el proyecto.</p>
+        <p> Crea un Grupo llamado Views</p>
+        <p> Crea un archivo tipo Swift File llamado CurrentSong</p>
+        <p> Agrega las propiedades enlistadas</p>
+        <p> En la variable timePlayed, asignale la propiedad didSet, quedará de la sig. manera:</p>
+        ```
+                import Foundation
 
-struct MarioWorld {
-  var mario: Mario
-  var gameOver: Bool = false
-  var lifes: Int = 1
-
-  var enemyAttacked: Bool? {
-    didSet {
-      if lifes > 0 {
-        lifes -= 1
-      } else {
-        gameOver = true
-        print("game over")
-      }
-    }
-  }
-
-  var 🍄: Bool {
-    willSet {
-      if !gameOver {
-        if newValue && mario == .small {
-          mario = .big
-          print("mario is big")
-          lifes = 2
-        } else {
-          mario = .small
-          print("mario is small")
-        }
-      }
-    }
-  }
-  
-}
-
-var game = MarioWorld(mario: .small, 🍄: false)
-game.🍄 = true
-print("Number of Lifes: \(game.lifes)")
-game.enemyAttacked = true
-print("Number of Lifes: \(game.lifes)")
-game.enemyAttacked = true
-game.enemyAttacked = true
-game.🍄 = true
-```
-</details> 
-
-
+                class CurrentSong {
+                    var name: String
+                    var duration: Double
+                    var timePlayed: Double {
+                        didSet {
+                            print(oldValue)
+                        }
+                    }
+                }
+        ```
+</details>
