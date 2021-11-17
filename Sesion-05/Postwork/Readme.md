@@ -29,10 +29,3 @@ Escribe dentro de cada extensión métodos para que puedas personalizar los comp
 Nota: El uso de Closures se cubre con el APIManager. Asegúrate de entenderlo, pues en próximas sesiones lo vas a necesitar.
 
 Con esto se tiene certeza de tener listo el proyecto para integrar lo que se verá en la siguiente sesión.
-
-
-
-<details>
-	<summary>Solución</summary>
-	<p> La estructura de tu proyecto, podría quedar así: </p>
-</details>
