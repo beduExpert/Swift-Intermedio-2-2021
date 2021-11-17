@@ -17,12 +17,15 @@
     - Configuración de AppTransportSecuritySettings para permitir conexión a cualquier dominio.
 
 - Crear el grupo: Utils:
+
 ![0.png](0.png)
 
 - Dentro de Utils crea el APIManager:
+
 ![1.png](1.png)
 
 - El APIManager, deberá de quedar de la siguiente manera:
+
 ![2.png](2.png)
 
 - Asegúrate de tener compilado la app para el final de esta sesión.
