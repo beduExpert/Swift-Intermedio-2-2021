@@ -33,10 +33,10 @@ De la clase de UIButton creada, implementa una funcionalidad de Highlight. Es de
 
 ![](1.png)
     
-    - En un inicializador haz un override al método draw e implementa un borde redondeado y un color por default.
+- En un inicializador haz un override al método draw e implementa un borde redondeado y un color por default.
     
 ![](2.png)
 
 ![](3.png)
 
-    3. En nuestra clase TrackTableViewCell cambia  lo necesario para implementar el uso de este botón en las celdas. Cuando el usuario toque el botón, debe presentarse el icono para el estado “highlighted”
+3. En nuestra clase TrackTableViewCell cambia  lo necesario para implementar el uso de este botón en las celdas. Cuando el usuario toque el botón, debe presentarse el icono para el estado “highlighted”
