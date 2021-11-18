@@ -1,45 +1,59 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Sesión 07 - Postwork - Programación orientada a protocolos. Herencia y Extensiones.
+## Postwork - Sesión 07
 
-### OBJETIVO
+**Objetivo**
 
-- Implementar una vista para presentar el detalle de un registro.
-- Implementar un método de un protocolo para eliminar registros llamandolo desde el delegado.
+- Implementar una vista para crear listas de reproducción (playlist).
+- Implementar un método de un protocolo para eliminar canciones de la playlist,  llamándolo desde el delegado.
+ 
+ **Instrucciones**
 
-#### REQUISITOS
+El objetivo de este entregable, es que implementes la programación orientada a protocolos en el proyecto del módulo, para dejar el desarrollo del reproductor musical con mayor estructura e interactividad entre sus elementos.
 
-2. Xcode 12+
-3. [Proyecto de ejemplo para este módulo](EjemploDelegados)
+**⚙️ Requisitos**
 
-#### DESARROLLO
+- Xcode 12+
+- Proyecto del módulo 
 
-## Parte 1
+**Desarrollo**
 
-* Crea un nuevo **ViewController** llamado **PoepleDetailViewController** en tu proyecto de ejemplo.
+Para el desarrollo de este postwork, toma en cuenta los siguientes elementos para el entregable de la sesión:
 
-* Crea 3 **IBOutlet** que hagan referencia a 3 **UIlabels** que contendrán el _nombre, edad y teléfono_ de una persona.
+**Parte 1**
+1. Crea un nuevo archivo, subclase de UITableViewController llamado PlayListDetailController.swift en tu proyecto. En esta clase:
+- Crea 1 UITextField que contendrá  el nombre de la playlist.
+- Crea 1 UIButton que servirá para implementar la funcionalidad de agregar canciones. (detallaremos este comportamiento en la parte 3) 
+- Crea 1 UITableView donde se mostrarán las canciones que contenga la playlist
 
-* Crea una variable que pueda contener un objeto tipo **Person**.
+        **ProTip:** Una sugerencia de diseño de interfaz, es la siguiente:
 
-* En **Interface Builder** crea el nuevo **ViewController** y haz todas las conexiones necesarias.
+![](0.png)
 
-* Desde el **ViewController** deberás de instanciar el nuevo **PeopleDetailViewController** y le pasaras la persona seleccionada.
+        **Notas:** Pero tú puedes elegir los colores y estilos que prefieras para tus objetos. Utiliza Extensiones para personalizar los componentes
 
-* Deberás de mostrar esa persona en el detalle.
+- Además declara una variable que pueda contener un Set de objetos Track
+ 
+**Parte 2**
 
-## Parte 2
+1. Crea un nuevo archivo, subclase de UIView llamado TracksPickerView.swift en tu proyecto. En esta clase:
+- Declara un protocolo llamado TracksPickerDelegate en este protocolo declara un método, llámalo addTrack Este método debe recibir como argumento un objeto de tipo Track
+- Crea 1 UIButton que debe remover la vista
+- Crea 1 UIButton que debe notificar al delegado de la vista, para agregar la canción seleccionada en el PickerView, cuando el usuario lo toque.
+- Crea 1 UIPickerView donde se mostrarán las canciones que tenemos disponibles en la App
 
-* En **AddPersonViewController** en el protocolo **AddPersonDelegate** crea un nuevo método, llamalo **deletePerson** que reciba un **Person** como parámetro.
+        **ProTip:** Una sugerencia de diseño de esta interfaz, es la siguiente:
+        
+![](1.png)
 
-* En **AddPersonViewController** Crea una nueva **IBAction** llamada **deletePerson** la cual reciba un **Person** como parámetro.
+        **Notas:** Pero tú puedes elegir los colores y estilos que prefieras para tus objetos. Utiliza Extensiones para personalizar los componentes
 
-* Adentro del **IBAction** implementa la llamada al método del protocolo que se encargará de borrar el registro.
+- Además declara una variable que implemente el protocolo  TracksPickerDelegate llamada delegate
 
-* En **Interface Builder** Crea un nuevo botón para **Borrar Persona** y conectalo con el **IBAction**.
+**Parte 3**
 
-* En **ViewController** en la parte de la **extension** implementa el método para eliminar registro.
-
-* En la implementación deberás de buscar en el arreglo a ese Objeto y lo borraras.
-
-* Luego actualizaras la tabla.
+1. De regreso en PlayListDetailController:
+- En el botón que colocamos, implementa lo necesario para que al tocarlo, se presente la vista  TracksPickerView en la pantalla (será un subview así que necesita un frame). 
+- Debes  establecer su propiedad delegate para que nuestra clase PlayListDetailController pueda recibir cada canción que se haya seleccionado
+- En la implementación del método del delegado deberás de agregar al Set ese objeto Track
+- Por último actualiza la tabla.

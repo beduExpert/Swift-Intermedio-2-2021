@@ -1,24 +1,42 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Postwork - Sesión 03 - Nuevo feature para subclase de UIButton y mejora en la clase **Song**
+## Postwork - Sesión 03 ##
 
-### OBJETIVO
+**Objetivo**
+ 
+- Implementar enum para definir valores de manera descriptiva
+- Crear una subclase de UIButton e implementar lo que se describe en el desarrollo para que el botón muestre visualmente el estado en que se encuentra.
 
-- Reorganiza la clase **Song** e implementa el enum de MusicGenre.
-- Crea una extensión de **UIButton** e implementa lo que se describe en el desarrollo.
-
-#### REQUISITOS
-
+**REQUISITOS**
 1. Lo necesario para desarrollar el ejemplo está en los retos de esta sesión, básate en ellos para preparar tu entregable.
 
-#### DESARROLLO
+**Antes de empezar**
 
-* Utiliza los  retos de está sección para implementar correctamente los cambios que se te piden a la clase Song.
-Se proporciona un código de ayuda, ver clase [HighlightButton](HighlightButton.swift).
+**⚙️ Setup**
+- Asegúrate de tener XCode instalado (la versión 12.5.1 es suficiente).
+- El proyecto de MusicApp que has estado utilizando en este módulo.
 
-* De la clase de UIButton creada, implementa una funcionalidad de Highlight. Es decir, al presionar un botón se debe mostrar un color distinto, este color deberá coincidir con el utilizado en las celdas de la vista principal. Como el botón es redondo, debería aparecer el highlight redondo.
+**Desarrollo**
+Se proporciona un código de ayuda en la clase HighlightButton del repositorio, en la sección del Postwork.
+
+También puedes usar este icono para cambiar el estado del botón.
+
+De la clase de UIButton creada, implementa una funcionalidad de Highlight. Es decir, al presionar el botón este se debe mostrar distinto, para informar al usuario que algo está ocurriendo.
  
-* Implementa lo siguiente:
-Un enum llamado PlayerStates con los casos de play, pause, next y previous.
-Las propiedades de icon, secondIcon e isPlaying.
-En un inicializador haz un override al método draw e implementa un borde redondeado y un color por default.
+ 
+ Implementa lo siguiente:
+1. En nuestro archivo “Modelos.swift”, crea un enum llamado PlayerStates con los casos de play, pause, next y previous.
+
+![](0.png)
+
+2. Agrega una clase que herede de UIButton y contenga las propiedades de icon, secondIcon e isPlaying
+
+![](1.png)
+    
+- En un inicializador haz un override al método draw e implementa un borde redondeado y un color por default.
+    
+![](2.png)
+
+![](3.png)
+
+3. En nuestra clase TrackTableViewCell cambia  lo necesario para implementar el uso de este botón en las celdas. Cuando el usuario toque el botón, debe presentarse el icono para el estado “highlighted”

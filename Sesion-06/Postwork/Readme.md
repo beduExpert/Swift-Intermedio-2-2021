@@ -1,11 +1,15 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Sesión 06 - Postwork - Programación orientada a objetos. Herencia y Polimorfismo.
+## Postwork - Sesión 06
 
-### OBJETIVO
+**Objetivo**
 
-- Entender el uso correcto de la Herencia y el Polimorfismo.
+- Reconocer el uso correcto de la Herencia y el Polimorfismo con la finalidad de aplicar las técnicas en el desarrollo del reproductor de música.
 
-#### DESARROLLO
 
-Discute con tu mentor el uso de Herencia y Polimorfismo, si te quedaste con alguna duda, favor de aclararla con el/ella.
+**Indicaciones generales**
+Discute con el experto los temas de Herencia y Polimorfismo. Conforme avances en el curso, vas a aplicar estas 2 técnicas para que tu código sea más limpio, reusable, y así  cualquier programador lo pueda entender.
+
+**🚀 Desarrollo**
+- Entrega a tu experto los playgrounds que hiciste en los ejemplos y retos para su revisión
+

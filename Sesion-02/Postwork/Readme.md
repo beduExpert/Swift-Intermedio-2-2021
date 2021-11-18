@@ -1,32 +1,36 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 ## Postwork de la Sesión 02
 
-## Al final de la sesión, tendrás implementado completamente los sig. puntos:
-* APIManager
-* Detectar conexión a internet
-* Protocolo codable
-* Coding Keys
+**Objetivo** 
+- Integrar un método para determinar si hay conexión a internet.
+- Reutilizar la clase para hacer llamadas tipo REST utilizando URLSession, que se creó durante la sesión.
 
-### OBJETIVO
 
-- El proyecto al final del módulo deberá quedar con una estructura ordenada y con los requerimientos anteriores implementados.
+**Antes de empezar**
+**⚙️ Setup**
+- XCode 12+.
+- Aplicación de música con la que has estado trabajando.
 
-#### REQUISITOS
+**Desarrollo**
+- En tú app de música, lleva a cabo la implementación de los requerimientos para conexión a Internet que pudiste ver en los retos de esta sesión: 
+    - Agrega el framework SystemConfiguration
+    - Configuración de AppTransportSecuritySettings para permitir conexión a cualquier dominio.
 
-1. Proyecto de la sesión en curso.
-2. Xcode 12+.
+- Crear el grupo: Utils:
 
-#### DESARROLLO
+![0.png](0.png)
 
-- Realiza la implementación de todos los retos en tu proyecto.
+- Dentro de Utils crea el APIManager:
 
-	* [Reto 01](Reto-01)
-	* [Reto 02](Reto-02)
-	* [Reto 03](Reto-03)
-	* [Reto 04](Reto-04)
-	* [Reto 05](Reto-05)
+![1.png](1.png)
 
-#### La estructura final del proyecto deberá de verse como a continuación:
-![](estructuraFinal.png)
-![](apiManager.png)
-![](song.png)
+- El APIManager, deberá de quedar de la siguiente manera:
+
+![2.png](2.png)
+
+- Asegúrate de tener compilado la app para el final de esta sesión.
+
+**¡Recapitulemos!**
+
+- Tu proyecto deberá de compilar sin problemas una vez que hayas creado el APIManager.
+
