@@ -26,12 +26,16 @@ Con base en la aplicación que has ido desarrollando a lo largo del curso, crear
 #### DESARROLLO
 
 1. Abre el proyecto del módulo
-2. Elige nuestro archivo “Modelos.swift”. En él vamos a modificar la struct Track:
+2. Elige nuestro archivo “Modelos.swift”. 
+
+![](0.png)
+
+En él vamos a modificar la struct Track:
    - Agrega el protocolo Codable, nos será útil para mapear los datos que se obtenga posteriormente en formato JSON
 
    - Además agregaremos/modificaremos algunos parámetros para que sean tipo optional (los que terminan en ?). Al final tu código debe quedar así:
 
-     ![estructuraFinal.png](estructuraFinal.png)
+![estructuraFinal.png](estructuraFinal.png)
 
 3. Observaras que esta nueva definición causa un error con la variable tipo  arreglo de tracks que teníamos declarado anteriormente. ¿Puedes determinar cómo arreglar el error?
 4. En nuestra clase AudioPlayerViewController:
