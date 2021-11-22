@@ -5,7 +5,7 @@
 **Objetivo**
 
 - Implementar una vista para crear listas de reproducción (playlist).
-- Implementar un método de un protocolo para eliminar canciones de la playlist,  llamándolo desde el delegado.
+- Implementar un método de un protocolo para agregar canciones de la playlist,  llamándolo desde el delegado.
  
  **Instrucciones**
 
